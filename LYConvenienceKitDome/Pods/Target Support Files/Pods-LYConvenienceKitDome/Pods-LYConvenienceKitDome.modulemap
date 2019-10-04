@@ -1,0 +1,6 @@
+framework module Pods_LYConvenienceKitDome {
+  umbrella header "Pods-LYConvenienceKitDome-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4977549F4A15357630C1B4CA /* Pods_LYConvenienceKitDome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0C88FCDF2A40F71E983EE8 /* Pods_LYConvenienceKitDome.framework */; };
+		D67765132344F42C00019CDC /* LYTableViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67765122344F42C00019CDC /* LYTableViewConvenience.swift */; };
+		D67765152345002E00019CDC /* LYCollectionViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67765142345002E00019CDC /* LYCollectionViewConvenience.swift */; };
+		D67DC90D2345D715000F4645 /* LYScrollViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DC90C2345D715000F4645 /* LYScrollViewConvenience.swift */; };
+		D687EC69234659DB000427A2 /* LYScreenConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D687EC68234659DB000427A2 /* LYScreenConvenience.swift */; };
+		D69AA9B5234780060014E576 /* ly_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D69AA9B4234780060014E576 /* ly_placeholder.png */; };
+		D6E4E16623438DBC00005237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E16523438DBC00005237 /* AppDelegate.swift */; };
+		D6E4E16823438DBC00005237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E16723438DBC00005237 /* SceneDelegate.swift */; };
+		D6E4E16A23438DBC00005237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E16923438DBC00005237 /* ViewController.swift */; };
+		D6E4E16D23438DBC00005237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4E16B23438DBC00005237 /* Main.storyboard */; };
+		D6E4E16F23438DBE00005237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E4E16E23438DBE00005237 /* Assets.xcassets */; };
+		D6E4E17223438DBE00005237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4E17023438DBE00005237 /* LaunchScreen.storyboard */; };
+		D6E4E18823438EA600005237 /* LYViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E17A23438EA600005237 /* LYViewConvenience.swift */; };
+		D6E4E18923438EA600005237 /* LYTextViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E17B23438EA600005237 /* LYTextViewConvenience.swift */; };
+		D6E4E18A23438EA600005237 /* LYImageViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E17C23438EA600005237 /* LYImageViewConvenience.swift */; };
+		D6E4E18B23438EA600005237 /* LYDoubleConvenienceFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E17D23438EA600005237 /* LYDoubleConvenienceFunc.swift */; };
+		D6E4E18C23438EA600005237 /* LYStringConvenienceFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E17E23438EA600005237 /* LYStringConvenienceFunc.swift */; };
+		D6E4E18D23438EA600005237 /* LYUIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E17F23438EA600005237 /* LYUIColorExt.swift */; };
+		D6E4E18E23438EA600005237 /* LYUIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18023438EA600005237 /* LYUIViewExt.swift */; };
+		D6E4E18F23438EA600005237 /* LYButtonConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18123438EA600005237 /* LYButtonConvenience.swift */; };
+		D6E4E19023438EA600005237 /* LYLabelConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18223438EA600005237 /* LYLabelConvenience.swift */; };
+		D6E4E19123438EA600005237 /* LYTextFieldConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18323438EA600005237 /* LYTextFieldConvenience.swift */; };
+		D6E4E19223438EA600005237 /* LYConvenienceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18423438EA600005237 /* LYConvenienceProtocol.swift */; };
+		D6E4E19323438EA600005237 /* LYViewCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18523438EA600005237 /* LYViewCommonFunc.swift */; };
+		D6E4E19423438EA600005237 /* LYImageConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18623438EA600005237 /* LYImageConvenience.swift */; };
+		D6E4E19523438EA600005237 /* LYDateConvenienceFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E18723438EA600005237 /* LYDateConvenienceFunc.swift */; };
+		D6E4E1E52343A03400005237 /* LYMutableAttributedStringConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4E1E42343A03400005237 /* LYMutableAttributedStringConvenience.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		206400A5892A2E3DB838A56E /* Pods-LYConvenienceKitDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYConvenienceKitDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYConvenienceKitDome/Pods-LYConvenienceKitDome.debug.xcconfig"; sourceTree = "<group>"; };
+		AF0C88FCDF2A40F71E983EE8 /* Pods_LYConvenienceKitDome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYConvenienceKitDome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67765122344F42C00019CDC /* LYTableViewConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYTableViewConvenience.swift; sourceTree = "<group>"; };
+		D67765142345002E00019CDC /* LYCollectionViewConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYCollectionViewConvenience.swift; sourceTree = "<group>"; };
+		D67DC90C2345D715000F4645 /* LYScrollViewConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYScrollViewConvenience.swift; sourceTree = "<group>"; };
+		D687EC68234659DB000427A2 /* LYScreenConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYScreenConvenience.swift; sourceTree = "<group>"; };
+		D69AA9B4234780060014E576 /* ly_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ly_placeholder.png; sourceTree = "<group>"; };
+		D6E4E16223438DBC00005237 /* LYConvenienceKitDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYConvenienceKitDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E4E16523438DBC00005237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6E4E16723438DBC00005237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D6E4E16923438DBC00005237 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6E4E16C23438DBC00005237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6E4E16E23438DBE00005237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6E4E17123438DBE00005237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6E4E17323438DBE00005237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6E4E17A23438EA600005237 /* LYViewConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYViewConvenience.swift; sourceTree = "<group>"; };
+		D6E4E17B23438EA600005237 /* LYTextViewConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYTextViewConvenience.swift; sourceTree = "<group>"; };
+		D6E4E17C23438EA600005237 /* LYImageViewConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYImageViewConvenience.swift; sourceTree = "<group>"; };
+		D6E4E17D23438EA600005237 /* LYDoubleConvenienceFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYDoubleConvenienceFunc.swift; sourceTree = "<group>"; };
+		D6E4E17E23438EA600005237 /* LYStringConvenienceFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYStringConvenienceFunc.swift; sourceTree = "<group>"; };
+		D6E4E17F23438EA600005237 /* LYUIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYUIColorExt.swift; sourceTree = "<group>"; };
+		D6E4E18023438EA600005237 /* LYUIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYUIViewExt.swift; sourceTree = "<group>"; };
+		D6E4E18123438EA600005237 /* LYButtonConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYButtonConvenience.swift; sourceTree = "<group>"; };
+		D6E4E18223438EA600005237 /* LYLabelConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYLabelConvenience.swift; sourceTree = "<group>"; };
+		D6E4E18323438EA600005237 /* LYTextFieldConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYTextFieldConvenience.swift; sourceTree = "<group>"; };
+		D6E4E18423438EA600005237 /* LYConvenienceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYConvenienceProtocol.swift; sourceTree = "<group>"; };
+		D6E4E18523438EA600005237 /* LYViewCommonFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYViewCommonFunc.swift; sourceTree = "<group>"; };
+		D6E4E18623438EA600005237 /* LYImageConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYImageConvenience.swift; sourceTree = "<group>"; };
+		D6E4E18723438EA600005237 /* LYDateConvenienceFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYDateConvenienceFunc.swift; sourceTree = "<group>"; };
+		D6E4E1E42343A03400005237 /* LYMutableAttributedStringConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYMutableAttributedStringConvenience.swift; sourceTree = "<group>"; };
+		E8CCE87BCFF91DBF24766F3A /* Pods-LYConvenienceKitDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYConvenienceKitDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYConvenienceKitDome/Pods-LYConvenienceKitDome.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6E4E15F23438DBC00005237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4977549F4A15357630C1B4CA /* Pods_LYConvenienceKitDome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD805454EBE716660AB3630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				206400A5892A2E3DB838A56E /* Pods-LYConvenienceKitDome.debug.xcconfig */,
+				E8CCE87BCFF91DBF24766F3A /* Pods-LYConvenienceKitDome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9E819BC4EF51CB796F5FF1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C88FCDF2A40F71E983EE8 /* Pods_LYConvenienceKitDome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6E4E15923438DBC00005237 = {
+			isa = PBXGroup;
+			children = (
+				D6E4E16423438DBC00005237 /* LYConvenienceKitDome */,
+				D6E4E16323438DBC00005237 /* Products */,
+				2CD805454EBE716660AB3630 /* Pods */,
+				A9E819BC4EF51CB796F5FF1B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6E4E16323438DBC00005237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6E4E16223438DBC00005237 /* LYConvenienceKitDome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6E4E16423438DBC00005237 /* LYConvenienceKitDome */ = {
+			isa = PBXGroup;
+			children = (
+				D6E4E17923438EA600005237 /* LYConvenienceKit */,
+				D6E4E16523438DBC00005237 /* AppDelegate.swift */,
+				D6E4E16723438DBC00005237 /* SceneDelegate.swift */,
+				D6E4E16923438DBC00005237 /* ViewController.swift */,
+				D6E4E16B23438DBC00005237 /* Main.storyboard */,
+				D6E4E16E23438DBE00005237 /* Assets.xcassets */,
+				D6E4E17023438DBE00005237 /* LaunchScreen.storyboard */,
+				D6E4E17323438DBE00005237 /* Info.plist */,
+			);
+			path = LYConvenienceKitDome;
+			sourceTree = "<group>";
+		};
+		D6E4E17923438EA600005237 /* LYConvenienceKit */ = {
+			isa = PBXGroup;
+			children = (
+				D69AA9B4234780060014E576 /* ly_placeholder.png */,
+				D6E4E18423438EA600005237 /* LYConvenienceProtocol.swift */,
+				D6E4E17A23438EA600005237 /* LYViewConvenience.swift */,
+				D6E4E18223438EA600005237 /* LYLabelConvenience.swift */,
+				D6E4E18323438EA600005237 /* LYTextFieldConvenience.swift */,
+				D6E4E17B23438EA600005237 /* LYTextViewConvenience.swift */,
+				D6E4E18123438EA600005237 /* LYButtonConvenience.swift */,
+				D6E4E17C23438EA600005237 /* LYImageViewConvenience.swift */,
+				D67DC90C2345D715000F4645 /* LYScrollViewConvenience.swift */,
+				D67765122344F42C00019CDC /* LYTableViewConvenience.swift */,
+				D67765142345002E00019CDC /* LYCollectionViewConvenience.swift */,
+				D6E4E18623438EA600005237 /* LYImageConvenience.swift */,
+				D687EC68234659DB000427A2 /* LYScreenConvenience.swift */,
+				D6E4E1E42343A03400005237 /* LYMutableAttributedStringConvenience.swift */,
+				D6E4E18523438EA600005237 /* LYViewCommonFunc.swift */,
+				D6E4E17E23438EA600005237 /* LYStringConvenienceFunc.swift */,
+				D6E4E17D23438EA600005237 /* LYDoubleConvenienceFunc.swift */,
+				D6E4E18723438EA600005237 /* LYDateConvenienceFunc.swift */,
+				D6E4E17F23438EA600005237 /* LYUIColorExt.swift */,
+				D6E4E18023438EA600005237 /* LYUIViewExt.swift */,
+			);
+			name = LYConvenienceKit;
+			path = ../../LYConvenienceKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6E4E16123438DBC00005237 /* LYConvenienceKitDome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E4E17623438DBE00005237 /* Build configuration list for PBXNativeTarget "LYConvenienceKitDome" */;
+			buildPhases = (
+				8D06E67D8CA51980EF435095 /* [CP] Check Pods Manifest.lock */,
+				D6E4E15E23438DBC00005237 /* Sources */,
+				D6E4E15F23438DBC00005237 /* Frameworks */,
+				D6E4E16023438DBC00005237 /* Resources */,
+				4A2B001BC2AE80630A7B1124 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYConvenienceKitDome;
+			productName = LYConvenienceKitDome;
+			productReference = D6E4E16223438DBC00005237 /* LYConvenienceKitDome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6E4E15A23438DBC00005237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = LYConvenienceKit;
+				TargetAttributes = {
+					D6E4E16123438DBC00005237 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = D6E4E15D23438DBC00005237 /* Build configuration list for PBXProject "LYConvenienceKitDome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6E4E15923438DBC00005237;
+			productRefGroup = D6E4E16323438DBC00005237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6E4E16123438DBC00005237 /* LYConvenienceKitDome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6E4E16023438DBC00005237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69AA9B5234780060014E576 /* ly_placeholder.png in Resources */,
+				D6E4E17223438DBE00005237 /* LaunchScreen.storyboard in Resources */,
+				D6E4E16F23438DBE00005237 /* Assets.xcassets in Resources */,
+				D6E4E16D23438DBC00005237 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A2B001BC2AE80630A7B1124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LYConvenienceKitDome/Pods-LYConvenienceKitDome-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYConvenienceKitDome/Pods-LYConvenienceKitDome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D06E67D8CA51980EF435095 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYConvenienceKitDome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6E4E15E23438DBC00005237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E4E19323438EA600005237 /* LYViewCommonFunc.swift in Sources */,
+				D6E4E16A23438DBC00005237 /* ViewController.swift in Sources */,
+				D6E4E18923438EA600005237 /* LYTextViewConvenience.swift in Sources */,
+				D67DC90D2345D715000F4645 /* LYScrollViewConvenience.swift in Sources */,
+				D6E4E19223438EA600005237 /* LYConvenienceProtocol.swift in Sources */,
+				D6E4E16623438DBC00005237 /* AppDelegate.swift in Sources */,
+				D6E4E18A23438EA600005237 /* LYImageViewConvenience.swift in Sources */,
+				D67765132344F42C00019CDC /* LYTableViewConvenience.swift in Sources */,
+				D687EC69234659DB000427A2 /* LYScreenConvenience.swift in Sources */,
+				D6E4E18D23438EA600005237 /* LYUIColorExt.swift in Sources */,
+				D6E4E19123438EA600005237 /* LYTextFieldConvenience.swift in Sources */,
+				D6E4E19023438EA600005237 /* LYLabelConvenience.swift in Sources */,
+				D6E4E18B23438EA600005237 /* LYDoubleConvenienceFunc.swift in Sources */,
+				D6E4E19523438EA600005237 /* LYDateConvenienceFunc.swift in Sources */,
+				D6E4E16823438DBC00005237 /* SceneDelegate.swift in Sources */,
+				D6E4E1E52343A03400005237 /* LYMutableAttributedStringConvenience.swift in Sources */,
+				D6E4E18E23438EA600005237 /* LYUIViewExt.swift in Sources */,
+				D6E4E18823438EA600005237 /* LYViewConvenience.swift in Sources */,
+				D6E4E19423438EA600005237 /* LYImageConvenience.swift in Sources */,
+				D6E4E18F23438EA600005237 /* LYButtonConvenience.swift in Sources */,
+				D6E4E18C23438EA600005237 /* LYStringConvenienceFunc.swift in Sources */,
+				D67765152345002E00019CDC /* LYCollectionViewConvenience.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6E4E16B23438DBC00005237 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6E4E16C23438DBC00005237 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6E4E17023438DBE00005237 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6E4E17123438DBE00005237 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6E4E17423438DBE00005237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6E4E17523438DBE00005237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6E4E17723438DBE00005237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206400A5892A2E3DB838A56E /* Pods-LYConvenienceKitDome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZNN5D8954;
+				INFOPLIST_FILE = LYConvenienceKitDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyi.LYConvenienceKit.LYConvenienceKitDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6E4E17823438DBE00005237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8CCE87BCFF91DBF24766F3A /* Pods-LYConvenienceKitDome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZNN5D8954;
+				INFOPLIST_FILE = LYConvenienceKitDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyi.LYConvenienceKit.LYConvenienceKitDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6E4E15D23438DBC00005237 /* Build configuration list for PBXProject "LYConvenienceKitDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6E4E17423438DBE00005237 /* Debug */,
+				D6E4E17523438DBE00005237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6E4E17623438DBE00005237 /* Build configuration list for PBXNativeTarget "LYConvenienceKitDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6E4E17723438DBE00005237 /* Debug */,
+				D6E4E17823438DBE00005237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6E4E15A23438DBC00005237 /* Project object */;
+}
