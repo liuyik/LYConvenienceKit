@@ -69,9 +69,9 @@ extension LYViewConvenience where Self: UITextField {
     
     ///添加左边视图； v=nil时，w为文字到左边的距离
     @discardableResult
-    func addLeftRetractView(_ w:CGFloat=10,_ v:UIView?=nil) -> Self {
-        if v != nil {
-            leftView = v
+    func addLeftRetractView(_ w:CGFloat=10,view:UIView?=nil) -> Self {
+        if view != nil {
+            leftView = view
         }else if w>0 {
             leftView = UIView(frame: CGRect(x: 0, y: 0, width: w, height: 0))
         }
@@ -82,9 +82,9 @@ extension LYViewConvenience where Self: UITextField {
     
     ///添加右边视图；v=nil时，w为文字到右边的距离
     @discardableResult
-    func addRightRetractView(_ w:CGFloat=10,_ v:UIView?=nil) -> Self {
-        if v != nil {
-            rightView = v
+    func addRightRetractView(_ w:CGFloat=10,view:UIView?=nil) -> Self {
+        if view != nil {
+            rightView = view
         }else if w>0 {
             rightView = UIView(frame: CGRect(x: 0, y: 0, width: w, height: 0))
         }

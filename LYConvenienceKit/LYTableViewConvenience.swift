@@ -47,6 +47,20 @@ extension LYViewConvenience where Self: UITableView {
         return self
     }
     
+    ///头视图
+    @discardableResult
+    func tableHeaderView(_ headView:UIView) -> Self{
+        tableHeaderView = headView
+        return self
+    }
+    
+    ///尾视图
+    @discardableResult
+    func tableFooterView(_ footView:UIView) -> Self{
+        tableFooterView = footView
+        return self
+    }
+    
     ///delegate
     @discardableResult
     func delegate(_ target: Any?) -> Self{
