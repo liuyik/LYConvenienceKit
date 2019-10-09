@@ -60,6 +60,16 @@ extension UIColor {
         self.init(ly_Style.rawValue,alpha:alpha)
     }
     
+    ///随机颜色
+    class var ly_randomColor: UIColor {
+        get {
+            let red = CGFloat(arc4random()%255)/255.0
+            let green = CGFloat(arc4random()%255)/255.0
+            let blue = CGFloat(arc4random()%255)/255.0
+            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        }
+    }
+
     //渐变颜色的方向
     enum LYGradientColorDirection {
         case topToBottom           //从上到小
@@ -67,6 +77,7 @@ extension UIColor {
         case leftTopToRightBottom  //左上到右下
         case rightTopToleftBottom  //右上到左下
     }
+    
     /// 颜色的渐变图片，默认方向从左到右
     /// - parameter colors: 颜色的数组
     /// - parameter gradientDirection

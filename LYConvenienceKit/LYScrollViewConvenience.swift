@@ -27,7 +27,7 @@ extension LYViewConvenience where Self: UIScrollView {
     
     ///delegate
     @discardableResult
-    func delegate(target: Any?) -> Self{
+    func delegate(_ target: Any?) -> Self{
         delegate = target as? UIScrollViewDelegate
         return self
     }

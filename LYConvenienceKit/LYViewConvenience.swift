@@ -88,6 +88,13 @@ extension LYViewConvenience where Self: UIView {
         return self
     }
     
+    ///是否隐藏
+    @discardableResult
+    func hidden(_ isHid:Bool = true) -> Self {
+        isHidden = isHid
+        return self
+    }
+    
     ///添加点击事件
     @discardableResult
     func addTarget(target: Any?, action: Selector?)-> Self{

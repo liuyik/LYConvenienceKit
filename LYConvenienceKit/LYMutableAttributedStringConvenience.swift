@@ -97,15 +97,19 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
         return self
     }
     
-    ///添加图片
+    ///添加图片(默认添加到最后，position添加到具体位置)
     @discardableResult
-    func addImage(_ image:UIImage,bounds:CGRect,position:Int) -> Self {
+    func addImage(_ image:UIImage,bounds:CGRect,position:Int? = nil) -> Self {
         
         let arkattch = NSTextAttachment() //定义一个attachment
         arkattch.image = image//初始化图片
         arkattch.bounds = bounds //初始化图片的 bounds
         let markattchStr = NSAttributedString(attachment: arkattch) // 将attachment  加入富文本中
-        self.insert(markattchStr, at: position)
+        if let i = position{
+            self.insert(markattchStr, at: i)
+        }else {
+            self.append(markattchStr)
+        }
         
         return self
     }
@@ -114,13 +118,14 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     //MARK: - 字符串中查找给定子串并标记
     ///标记第一个子串
     @discardableResult
-    func markerStringOf(_ subString:String,_ mixtureAttribute:LYMixtureAttribute)-> Self {
+    func markerStringOf(_ mixtureAttribute:LYMixtureAttribute)-> Self {
         let str = self.string
         
         var attribute = mixtureAttribute.attributes
         attribute[NSAttributedString.Key.foregroundColor] = mixtureAttribute.color
         attribute[NSAttributedString.Key.font] = mixtureAttribute.font
         
+        let subString = mixtureAttribute.string
         if let range = str.range(of: subString) {
             self.addAttributes(attribute, range: NSRange(range, in: str))
         }
@@ -130,8 +135,8 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     
     ///标记所有子串(一般用于搜索时标记所有搜索关键字)
     @discardableResult
-    func markerAllStringOf(_ subString:String,_ mixtureAttribute:LYMixtureAttribute) -> Self{
-        
+    func markerAllStringOf(_ mixtureAttribute:LYMixtureAttribute) -> Self{
+        let subString = mixtureAttribute.string
         let arr:[NSRange] = ranges(of: subString).map{NSRange($0, in: subString)}
         
         for range in arr {

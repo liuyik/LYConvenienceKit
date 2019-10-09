@@ -74,9 +74,10 @@ extension LYViewConvenience where Self: UIButton {
         return self
     }
     
-    /// 修改按钮图片的位置
+    /// 修改按钮图片的位置（要先设置按钮的frame）
     /// - parameter position: .top:图片在上 .left:图片在左 .bottom:图片在下 .right:图片在右
     /// - parameter spacing: 图片与文字的间隙
+    @discardableResult
     func changeImagePosition(_ position: UIView.ContentMode, _ spacing: CGFloat = 5) -> Self{
         
         let imageSize = self.imageRect(forContentRect:self.frame)

@@ -87,14 +87,14 @@ extension LYViewConvenience where Self: UICollectionView {
     
     ///delegate
     @discardableResult
-    func delegate(target: Any?) -> Self{
+    func delegate(_ target: Any?) -> Self{
         delegate = target as? UICollectionViewDelegate
         return self
     }
     
     ///dataSource
     @discardableResult
-    func dataSource(target: Any?) -> Self{
+    func dataSource(_ target: Any?) -> Self{
         dataSource = target as? UICollectionViewDataSource
         return self
     }
@@ -119,12 +119,11 @@ extension LYViewConvenience where Self: UICollectionView {
     
     ///重用的cell
     @discardableResult
-    func ly_dequeueReusableCell<T: UICollectionViewCell>(_ aClass: T.Type,_ indexPath: IndexPath) -> T! {
+    func ly_dequeueReusableCell<T: UICollectionViewCell>(_ aClass: T.Type,_ indexPath: IndexPath) -> T {
         let name = String(describing: aClass)
-        guard let cell = dequeueReusableCell(withReuseIdentifier: name, for: indexPath) as? T else {
-            fatalError("\(name) is not registed")
-        }
-        return cell
+    
+        let cell = dequeueReusableCell(withReuseIdentifier: name, for: indexPath)
+        return cell as! T
     }
     
     // MARK: - HeaderFooter register and reuse
@@ -140,7 +139,7 @@ extension LYViewConvenience where Self: UICollectionView {
        
     ///注册HeaderFooter
     @discardableResult
-    func registerHeaderFooterClass<T: UIView>(_ aClass: T.Type,_ isHeader:Bool = true) -> Self{
+    func registerHeaderFooterClass<T: UICollectionReusableView>(_ aClass: T.Type,_ isHeader:Bool = true) -> Self{
         let name = String(describing: aClass)
         let kind = isHeader ? UICollectionView.elementKindSectionHeader:UICollectionView.elementKindSectionFooter
         register(aClass, forSupplementaryViewOfKind: kind, withReuseIdentifier: name)
@@ -149,13 +148,10 @@ extension LYViewConvenience where Self: UICollectionView {
     
     ///重用HeaderFooter
     @discardableResult
-    func ly_dequeueReusableHeaderFooter<T: UIView>(_ aClass: T.Type,_ indexPath: IndexPath,_ isHeader:Bool = true) -> T! {
+    func ly_dequeueReusableHeaderFooter<T: UICollectionReusableView>(_ aClass: T.Type,_ kind:String,_ indexPath: IndexPath) -> T {
         let name = String(describing: aClass)
-        let kind = isHeader ? UICollectionView.elementKindSectionHeader:UICollectionView.elementKindSectionFooter
-        guard let cell = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: name, for: indexPath) as? T else {
-            fatalError("\(name) is not registed")
-        }
-        return cell
+        let cell = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: name, for: indexPath)
+        return cell as! T
     }
     
 }

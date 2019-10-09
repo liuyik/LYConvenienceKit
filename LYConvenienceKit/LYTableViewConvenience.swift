@@ -49,14 +49,14 @@ extension LYViewConvenience where Self: UITableView {
     
     ///delegate
     @discardableResult
-    func delegate(target: Any?) -> Self{
+    func delegate(_ target: Any?) -> Self{
         delegate = target as? UITableViewDelegate
         return self
     }
     
     ///dataSource
     @discardableResult
-    func dataSource(target: Any?) -> Self{
+    func dataSource(_ target: Any?) -> Self{
         dataSource = target as? UITableViewDataSource
         return self
     }
@@ -81,18 +81,17 @@ extension LYViewConvenience where Self: UITableView {
     
     ///重用的cell
     @discardableResult
-    func ly_dequeueReusableCell<T: UITableViewCell>(_ aClass: T.Type,_ indexPath: IndexPath) -> T! {
+    func ly_dequeueReusableCell<T: UITableViewCell>(_ aClass: T.Type,_ indexPath: IndexPath) -> T {
         let name = String(describing: aClass)
-        guard let cell = dequeueReusableCell(withIdentifier: name,for: indexPath) as? T else {
-            fatalError("\(name) is not registed")
-        }
-        return cell
+        
+        let cell = dequeueReusableCell(withIdentifier: name,for: indexPath)
+        return cell as! T
     }
     
     // MARK: - HeaderFooter register and reuse
     ///注册xibHeaderFooter
     @discardableResult
-    func registerHeaderFooterNib<T: UIView>(_ aClass: T.Type) -> Self{
+    func registerHeaderFooterNib<T: UITableViewHeaderFooterView>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         let nib = UINib(nibName: name, bundle: nil)
         register(nib, forHeaderFooterViewReuseIdentifier: name)
@@ -101,7 +100,7 @@ extension LYViewConvenience where Self: UITableView {
        
     ///注册HeaderFooter
     @discardableResult
-    func registerHeaderFooterClass<T: UIView>(_ aClass: T.Type) -> Self{
+    func registerHeaderFooterClass<T: UITableViewHeaderFooterView>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         register(aClass, forHeaderFooterViewReuseIdentifier: name)
         return self
@@ -109,12 +108,10 @@ extension LYViewConvenience where Self: UITableView {
     
     ///重用HeaderFooter
     @discardableResult
-    func ly_dequeueReusableHeaderFooter<T: UIView>(_ aClass: T.Type,_ indexPath: IndexPath) -> T! {
+    func ly_dequeueReusableHeaderFooter<T: UIView>(_ aClass: T.Type) -> T? {
         let name = String(describing: aClass)
-        guard let cell = dequeueReusableHeaderFooterView(withIdentifier: name) as? T else {
-            fatalError("\(name) is not registed")
-        }
-        return cell
+        let cell = dequeueReusableHeaderFooterView(withIdentifier: name)
+        return cell as? T 
     }
     
 }

@@ -33,6 +33,7 @@ extension LYViewConvenience where Self: UILabel {
     }
     
     ///设置属性文本
+    @discardableResult
     func attributedText(_ attributedString:NSAttributedString?) -> Self {
         attributedText = attributedString
         return self
@@ -66,4 +67,10 @@ extension LYViewConvenience where Self: UILabel {
         return self
     }
     
+    ///设置文本对齐方式
+    @discardableResult
+    func textAlignment(_ alignment:NSTextAlignment = .left) -> Self {
+        textAlignment = alignment
+        return self
+    }
 }

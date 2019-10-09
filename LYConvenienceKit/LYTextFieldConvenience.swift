@@ -40,6 +40,7 @@ extension LYViewConvenience where Self: UITextField {
     }
     
     ///设置属性文本
+    @discardableResult
     func attributedText(_ attributedString:NSAttributedString?) -> Self {
         attributedText = attributedString
         return self

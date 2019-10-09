@@ -52,3 +52,7 @@ extension Double {
 extension Date {
     public var ly: LYDateConvenienceFunc { return LYDateConvenienceFunc(self) }
 }
+
+extension Dictionary where Key == String, Value == Any  {
+    public var ly: LYDictionaryConvenienceFunc { return LYDictionaryConvenienceFunc(self) }
+}

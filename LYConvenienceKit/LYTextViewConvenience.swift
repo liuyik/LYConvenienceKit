@@ -25,6 +25,23 @@ import UIKit
 
 extension LYViewConvenience where Self: UITextView {
    
+    ///设置提示文字(注意)
+    @discardableResult
+    func placeholder(_ placeholder:String?,_ placeholderColor:UIColor=UIColor(.placeholder)) -> Self{
+
+        //提示
+        let placeholderLabel = UILabel()
+            .text(placeholder)
+            .textColor(placeholderColor)
+            .hidden()
+     
+        placeholderLabel.font = self.font
+        placeholderLabel.sizeToFit()
+        self.addSubview(placeholderLabel)
+        self.setValue(placeholderLabel, forKey: "_placeholderLabel")
+        return self
+    }
+    
     ///设置文字
     @discardableResult
     func text(_ textString:String?) -> Self{
@@ -33,6 +50,7 @@ extension LYViewConvenience where Self: UITextView {
     }
  
     ///设置属性文本
+    @discardableResult
     func attributedText(_ attributedString:NSAttributedString?) -> Self {
         attributedText = attributedString
         return self

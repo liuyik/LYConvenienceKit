@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4977549F4A15357630C1B4CA /* Pods_LYConvenienceKitDome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0C88FCDF2A40F71E983EE8 /* Pods_LYConvenienceKitDome.framework */; };
+		D61CE73B234C308D006BDEB3 /* LYAppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CE73A234C308D006BDEB3 /* LYAppLog.swift */; };
+		D61CE73F234C3B85006BDEB3 /* LYDictionaryConvenienceFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CE73E234C3B85006BDEB3 /* LYDictionaryConvenienceFunc.swift */; };
+		D61CE76F234C76F4006BDEB3 /* ViewInitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CE76E234C76F4006BDEB3 /* ViewInitController.swift */; };
 		D67765132344F42C00019CDC /* LYTableViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67765122344F42C00019CDC /* LYTableViewConvenience.swift */; };
 		D67765152345002E00019CDC /* LYCollectionViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67765142345002E00019CDC /* LYCollectionViewConvenience.swift */; };
 		D67DC90D2345D715000F4645 /* LYScrollViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DC90C2345D715000F4645 /* LYScrollViewConvenience.swift */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		206400A5892A2E3DB838A56E /* Pods-LYConvenienceKitDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYConvenienceKitDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYConvenienceKitDome/Pods-LYConvenienceKitDome.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0C88FCDF2A40F71E983EE8 /* Pods_LYConvenienceKitDome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYConvenienceKitDome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61CE73A234C308D006BDEB3 /* LYAppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYAppLog.swift; sourceTree = "<group>"; };
+		D61CE73E234C3B85006BDEB3 /* LYDictionaryConvenienceFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYDictionaryConvenienceFunc.swift; sourceTree = "<group>"; };
+		D61CE76E234C76F4006BDEB3 /* ViewInitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInitController.swift; sourceTree = "<group>"; };
 		D67765122344F42C00019CDC /* LYTableViewConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYTableViewConvenience.swift; sourceTree = "<group>"; };
 		D67765142345002E00019CDC /* LYCollectionViewConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYCollectionViewConvenience.swift; sourceTree = "<group>"; };
 		D67DC90C2345D715000F4645 /* LYScrollViewConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYScrollViewConvenience.swift; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 				D6E4E16523438DBC00005237 /* AppDelegate.swift */,
 				D6E4E16723438DBC00005237 /* SceneDelegate.swift */,
 				D6E4E16923438DBC00005237 /* ViewController.swift */,
+				D61CE76E234C76F4006BDEB3 /* ViewInitController.swift */,
 				D6E4E16B23438DBC00005237 /* Main.storyboard */,
 				D6E4E16E23438DBE00005237 /* Assets.xcassets */,
 				D6E4E17023438DBE00005237 /* LaunchScreen.storyboard */,
@@ -153,8 +160,10 @@
 				D6E4E17E23438EA600005237 /* LYStringConvenienceFunc.swift */,
 				D6E4E17D23438EA600005237 /* LYDoubleConvenienceFunc.swift */,
 				D6E4E18723438EA600005237 /* LYDateConvenienceFunc.swift */,
+				D61CE73E234C3B85006BDEB3 /* LYDictionaryConvenienceFunc.swift */,
 				D6E4E17F23438EA600005237 /* LYUIColorExt.swift */,
 				D6E4E18023438EA600005237 /* LYUIViewExt.swift */,
+				D61CE73A234C308D006BDEB3 /* LYAppLog.swift */,
 			);
 			name = LYConvenienceKit;
 			path = ../../LYConvenienceKit;
@@ -275,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61CE73B234C308D006BDEB3 /* LYAppLog.swift in Sources */,
 				D6E4E19323438EA600005237 /* LYViewCommonFunc.swift in Sources */,
 				D6E4E16A23438DBC00005237 /* ViewController.swift in Sources */,
 				D6E4E18923438EA600005237 /* LYTextViewConvenience.swift in Sources */,
@@ -282,10 +292,12 @@
 				D6E4E19223438EA600005237 /* LYConvenienceProtocol.swift in Sources */,
 				D6E4E16623438DBC00005237 /* AppDelegate.swift in Sources */,
 				D6E4E18A23438EA600005237 /* LYImageViewConvenience.swift in Sources */,
+				D61CE73F234C3B85006BDEB3 /* LYDictionaryConvenienceFunc.swift in Sources */,
 				D67765132344F42C00019CDC /* LYTableViewConvenience.swift in Sources */,
 				D687EC69234659DB000427A2 /* LYScreenConvenience.swift in Sources */,
 				D6E4E18D23438EA600005237 /* LYUIColorExt.swift in Sources */,
 				D6E4E19123438EA600005237 /* LYTextFieldConvenience.swift in Sources */,
+				D61CE76F234C76F4006BDEB3 /* ViewInitController.swift in Sources */,
 				D6E4E19023438EA600005237 /* LYLabelConvenience.swift in Sources */,
 				D6E4E18B23438EA600005237 /* LYDoubleConvenienceFunc.swift in Sources */,
 				D6E4E19523438EA600005237 /* LYDateConvenienceFunc.swift in Sources */,
