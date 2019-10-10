@@ -26,49 +26,49 @@ import UIKit
 extension LYViewConvenience where Self: UIButton {
    
     ///设置标题
-    @discardableResult
+    @discardableResult  public
     func title(_ title:String?,_ state:UIControl.State = .normal) -> Self{
         setTitle(title, for: state)
         return self
     }
     
     ///设置标题颜色
-    @discardableResult
+    @discardableResult  public
     func titleColor(_ color:UIColor,_ state:UIControl.State = .normal) -> Self {
         setTitleColor(color, for: state)
         return self
     }
     
     ///设置字体
-    @discardableResult
+    @discardableResult  public
     func font(_ font:CGFloat) -> Self{
         titleLabel?.font = UIFont.systemFont(ofSize: font)
         return self
     }
     
     ///设置粗字体
-    @discardableResult
+    @discardableResult  public
     func boldFont(_ font:CGFloat) -> Self{
         titleLabel?.font = UIFont.boldSystemFont(ofSize: font)
         return self
     }
     
     ///设置图片
-    @discardableResult
+    @discardableResult  public
     func image(_ image:UIImage?,_ state:UIControl.State = .normal) -> Self {
         setImage(image, for: state)
         return self
     }
     
     ///设置背景图片
-    @discardableResult
+    @discardableResult  public
     func backgroundImage(_ image:UIImage?,_ state:UIControl.State = .normal) -> Self {
         setBackgroundImage(image, for: state)
         return self
     }
     
     ///添加点击事件
-    @discardableResult
+    @discardableResult  public
     func addClickTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event = .touchUpInside) -> Self{
         addTarget(target, action: action, for: controlEvents)
         return self
@@ -77,7 +77,7 @@ extension LYViewConvenience where Self: UIButton {
     /// 修改按钮图片的位置（要先设置按钮的frame）
     /// - parameter position: .top:图片在上 .left:图片在左 .bottom:图片在下 .right:图片在右
     /// - parameter spacing: 图片与文字的间隙
-    @discardableResult
+    @discardableResult  public
     func changeImagePosition(_ position: UIView.ContentMode, _ spacing: CGFloat = 5) -> Self{
         
         let imageSize = self.imageRect(forContentRect:self.frame)
@@ -129,6 +129,7 @@ extension LYViewConvenience where Self: UIButton {
     }
     
     ///添加下划线，top:离文字底部的距离
+    @discardableResult  public
     func addUnderline(_ top:CGFloat = 0,_ height:CGFloat = 1) -> Self{
         
         guard let titLabel = titleLabel else {return self}
@@ -145,7 +146,7 @@ extension LYViewConvenience where Self: UIButton {
     }
     
     ///验证码倒计时
-    func ly_countDown(_ count: Int,_ title:String = "发送验证码"){
+    public func ly_countDown(_ count: Int,_ title:String = "发送验证码"){
         // 倒计时开始,禁止点击事件
         isEnabled = false
         

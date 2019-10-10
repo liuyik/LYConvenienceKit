@@ -34,7 +34,7 @@ public struct LYStringConvenienceFunc {
     
     //MARK: - String -> NewString
     ///MD5加密
-    func md5String() -> String{
+    public func md5String() -> String{
         
         let cStr = string.cString(using: String.Encoding.utf8)
         let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16)
@@ -51,7 +51,7 @@ public struct LYStringConvenienceFunc {
     }
     
     ///获取URL中的参数(如：http....com?name=test，name = "name"则返回"test")
-    func getParamByName(_ name:String) -> String {
+    public func getParamByName(_ name:String) -> String {
         
         let regTags = "(^|&|\\?)+\(name)=+([^&]*)(&|$)"
         
@@ -69,7 +69,7 @@ public struct LYStringConvenienceFunc {
     }
     
     ///HTML富文本反转义
-    func htmlToString() -> String {
+    public func htmlToString() -> String {
         
         var htmlStr = ""
         do {
@@ -82,7 +82,7 @@ public struct LYStringConvenienceFunc {
     }
       
     ///日期字符串，转换成另一种格式的字符串
-    func formatToNewFormat(_ format:String,newFormat:String="yyyy-MM-dd")->String{
+    public func formatToNewFormat(_ format:String,newFormat:String="yyyy-MM-dd")->String{
 
         let dateFormatter: DateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
@@ -95,7 +95,7 @@ public struct LYStringConvenienceFunc {
     }
     
     ///计算String的size
-    func calculationStringSize(font: UIFont, size: CGSize,options:NSStringDrawingOptions = .usesLineFragmentOrigin) -> CGSize {
+    public func calculationStringSize(font: UIFont, size: CGSize,options:NSStringDrawingOptions = .usesLineFragmentOrigin) -> CGSize {
         
         let labelText: NSString = string as NSString
         
@@ -106,12 +106,12 @@ public struct LYStringConvenienceFunc {
     }
     
     //MARK: - String -> NSAttributedString
-    func attributedString() -> NSMutableAttributedString {
+    public func attributedString() -> NSMutableAttributedString {
         return NSMutableAttributedString(string: string)
     }
     
     ///HTML富文本
-    func htmlToAttributedString() -> NSAttributedString {
+    public func htmlToAttributedString() -> NSAttributedString {
         
         let str = string
         
@@ -132,21 +132,21 @@ public struct LYStringConvenienceFunc {
     
     //MARK: - 判断
     ///判断手机号码是否正确
-    func isMobileNumber() -> Bool {
+    public func isMobileNumber() -> Bool {
         
         let predicateStr = "^1[0-9]\\d{9}$"
         return evaluatePredicate(predicateStr)
     }
     
     ///判断邮箱是否正确
-    func isEmailNumber() -> Bool {
+    public func isEmailNumber() -> Bool {
         
         let predicateStr = "^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
         return evaluatePredicate(predicateStr)
     }
     
     ///判断密码是否为6-8位字母和数字组合
-    func isPassword() -> Bool {
+    public func isPassword() -> Bool {
         
         let predicateStr = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,8}$"
         return evaluatePredicate(predicateStr)
@@ -154,13 +154,13 @@ public struct LYStringConvenienceFunc {
         
     
     ///谓词判断
-    internal func evaluatePredicate(_ str:String) -> Bool {
+    public func evaluatePredicate(_ str:String) -> Bool {
         let predicate = NSPredicate.init(format: "SELF MATCHES %@", str)
         return predicate.evaluate(with: string)
     }
     
     ///app是否能够打开链接，能就打开链接
-    func isAppCanOpen() -> Bool {
+    public func isAppCanOpen() -> Bool {
         if let url = URL(string: string) {
             
             if UIApplication.shared.canOpenURL(url) {

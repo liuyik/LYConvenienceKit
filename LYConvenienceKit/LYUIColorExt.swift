@@ -26,7 +26,7 @@ import UIKit
 extension UIColor {
    
     //颜色样式
-    enum LYColorStyle: Int {
+    public enum LYColorStyle: Int {
         
         ///默认文字颜色#000000
         case defaulted = 0x000000
@@ -52,16 +52,16 @@ extension UIColor {
     }
     
     ///16进制颜色，如：黑色  ly_rgb = 0x000000
-    convenience init(_ ly_rgb:Int,alpha:CGFloat=1) {
+    public convenience init(_ ly_rgb:Int,alpha:CGFloat=1) {
         self.init(red: (CGFloat((ly_rgb & 0xFF0000) >> 16))/255.0, green: (CGFloat((ly_rgb & 0xFF00) >> 8))/255.0, blue: (CGFloat(ly_rgb & 0xFF))/255.0, alpha: alpha);
     }
     ///设置颜色样式
-    convenience init(_ ly_Style:LYColorStyle,alpha:CGFloat=1) {
+    public convenience init(_ ly_Style:LYColorStyle,alpha:CGFloat=1) {
         self.init(ly_Style.rawValue,alpha:alpha)
     }
     
     ///随机颜色
-    class var ly_randomColor: UIColor {
+    public class var ly_randomColor: UIColor {
         get {
             let red = CGFloat(arc4random()%255)/255.0
             let green = CGFloat(arc4random()%255)/255.0
@@ -71,7 +71,7 @@ extension UIColor {
     }
 
     //渐变颜色的方向
-    enum LYGradientColorDirection {
+    public enum LYGradientColorDirection {
         case topToBottom           //从上到小
         case letfToRight           //从左到右
         case leftTopToRightBottom  //左上到右下
@@ -81,7 +81,7 @@ extension UIColor {
     /// 颜色的渐变图片，默认方向从左到右
     /// - parameter colors: 颜色的数组
     /// - parameter gradientDirection
-    class func ly_gradualImageFromColors(
+    public class func ly_gradualImageFromColors(
         colors : [UIColor],
         gradientDirection:LYGradientColorDirection = .letfToRight,
         gradientSize:CGSize = CGSize(width: 300, height: 120)) -> UIImage? {
@@ -119,7 +119,7 @@ extension UIColor {
     }
 
     ///颜色转图片
-    func ly_image() -> UIImage {
+    public func ly_image() -> UIImage {
         
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)

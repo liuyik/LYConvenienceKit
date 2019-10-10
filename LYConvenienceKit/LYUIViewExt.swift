@@ -26,7 +26,7 @@ import UIKit
 extension UIView{
     //MARK: - VIEW属性
    
-    var ly_left:CGFloat {
+    public var ly_left:CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -37,7 +37,7 @@ extension UIView{
         }
     }
     
-    var ly_top:CGFloat {
+    public var ly_top:CGFloat {
         get {
             return self.frame.origin.y
         }
@@ -49,7 +49,7 @@ extension UIView{
         }
     }
     
-    var ly_width:CGFloat {
+    public var ly_width:CGFloat {
         get {
             return self.frame.size.width
         }
@@ -61,7 +61,7 @@ extension UIView{
         }
     }
     
-    var ly_height:CGFloat {
+    public var ly_height:CGFloat {
         get {
             return self.frame.size.height
         }
@@ -73,19 +73,19 @@ extension UIView{
         }
     }
     
-    var ly_right:CGFloat {
+    public var ly_right:CGFloat {
         get {
             return self.ly_left + self.ly_width
         }
     }
     
-    var ly_bottom:CGFloat {
+    public var ly_bottom:CGFloat {
         get {
             return self.ly_top + self.ly_height
         }
     }
     
-    var ly_centerX:CGFloat {
+    public var ly_centerX:CGFloat {
         get {
             return self.center.x
         }
@@ -97,7 +97,7 @@ extension UIView{
         }
     }
     
-    var ly_centerY:CGFloat {
+    public var ly_centerY:CGFloat {
         get {
             return self.center.y
         }

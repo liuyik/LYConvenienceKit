@@ -9,14 +9,17 @@ Pod::Spec.new do |spec|
  
   spec.author             = { "刘毅" => "352601605@qq.com" }
   
-  spec.source       = { :git => "https://github.com/liuyik/LYConvenienceKit.git", :tag => "#{s.version}" }
-  spec.source_files = "LYConvenienceKit/", "*.swift"
+  spec.source       = { :git => "https://github.com/liuyik/LYConvenienceKit.git", :tag => "1.0.0" }
+  spec.source_files = "LYConvenienceKit/*.swift"
   spec.resources    = "LYConvenienceKit/*.png"
   spec.exclude_files = "Classes/Exclude"
 
   spec.swift_version = '5.0'
-  
+
   spec.requires_arc = true
-  spec.dependency "SnapKit"
-  spec.dependency "Kingfisher"
+
+  spec.ios.deployment_target = "10.0"
+  
+  spec.dependency 'SnapKit'
+  spec.dependency 'Kingfisher'
 end

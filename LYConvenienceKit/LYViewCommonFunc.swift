@@ -33,7 +33,7 @@ public struct LYViewConvenienceFunc {
     
     //MARK: - 取得视图转化后的图片(截图)
     ///获取View图片(截图)
-    func getImage() -> UIImage{
+    public func getImage() -> UIImage{
         
         UIGraphicsBeginImageContextWithOptions(view.frame.size, false, UIScreen.main.scale)
         
@@ -49,7 +49,7 @@ public struct LYViewConvenienceFunc {
     
     //MARK: - 取得视图所在的控制器
     ///取得视图所在的控制器
-    func viewController()->UIViewController? {
+    public func viewController()->UIViewController? {
         
         var nextResponder: UIResponder? = view
         
@@ -67,7 +67,7 @@ public struct LYViewConvenienceFunc {
     
     //MARK: - 设置视图layer
     ///设置阴影
-    func layerShadow(color:UIColor = .black,
+    public func layerShadow(color:UIColor = .black,
                      offsetSize:CGSize = CGSize(width: 0, height: 0),
                      opacity:Float = 0.1,
                      radius:CGFloat = 5.0) {
@@ -80,7 +80,7 @@ public struct LYViewConvenienceFunc {
     
 
     ///设置部分圆角
-    func layerRoundingCorners(corners:UIRectCorner,radius:CGFloat)
+    public func layerRoundingCorners(corners:UIRectCorner,radius:CGFloat)
         
     {
         
@@ -101,21 +101,21 @@ public struct LYViewConvenienceFunc {
     }
     
     ///边框位置
-    struct LYUIBorderSideType: OptionSet {
-        var rawValue: Int
-        init(rawValue: Int) {
+    public struct LYUIBorderSideType: OptionSet {
+        public var rawValue: Int
+        public init(rawValue: Int) {
             self.rawValue = rawValue
         }
         
-        static var all: LYUIBorderSideType = LYUIBorderSideType(rawValue: 0)
-        static var left: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 0)
-        static var right: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 1)
-        static var top: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 2)
-        static var bottom: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 3)
+        public static var all: LYUIBorderSideType = LYUIBorderSideType(rawValue: 0)
+        public static var left: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 0)
+        public static var right: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 1)
+        public static var top: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 2)
+        public static var bottom: LYUIBorderSideType = LYUIBorderSideType(rawValue: 1 << 3)
     }
     
     ///设置部分边框(注意：要先设置视图的frame)
-    func layerBorder(color: UIColor, width: CGFloat, type: LYUIBorderSideType){
+    public func layerBorder(color: UIColor, width: CGFloat, type: LYUIBorderSideType){
         
         if type ==  .all {
             view.layer.borderColor = color.cgColor

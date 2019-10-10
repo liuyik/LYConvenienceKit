@@ -27,14 +27,14 @@ import Kingfisher
 extension LYViewConvenience where Self: UIImageView {
     
     ///设置图片
-    @discardableResult
+    @discardableResult  public
     func image(_ img:UIImage?) -> Self {
         image = img
         return self
     }
     
     ///设置图片数组(gif)
-    @discardableResult
+    @discardableResult  public
     func images(_ imgs:[UIImage],
                 duration:TimeInterval = 1.0,
                 repeatCount:Int = 0) -> Self {
@@ -51,7 +51,7 @@ extension LYViewConvenience where Self: UIImageView {
     
     //MARK:UIImageView用Kingfisher加载网络图片
     //设置网络图片
-    func ly_setKfImage(_ imageUrl:String?,
+    public func ly_setKfImage(_ imageUrl:String?,
                        _ placeholderImageName:String = "ly_placeholder") {
         if let url = imageUrl {
             if let imgUrl = URL(string: url) {

@@ -26,7 +26,7 @@ import UIKit
 extension LYViewConvenience where Self: UITextView {
    
     ///设置提示文字(注意)
-    @discardableResult
+    @discardableResult  public
     func placeholder(_ placeholder:String?,_ placeholderColor:UIColor=UIColor(.placeholder)) -> Self{
 
         //提示
@@ -43,49 +43,49 @@ extension LYViewConvenience where Self: UITextView {
     }
     
     ///设置文字
-    @discardableResult
+    @discardableResult  public
     func text(_ textString:String?) -> Self{
         text = textString
         return self
     }
  
     ///设置属性文本
-    @discardableResult
+    @discardableResult  public
     func attributedText(_ attributedString:NSAttributedString?) -> Self {
         attributedText = attributedString
         return self
     }
     
     ///设置字体
-    @discardableResult
+    @discardableResult  public
     func font(_ fontSize:CGFloat) -> Self{
         font = UIFont.systemFont(ofSize: fontSize)
         return self
     }
     
     ///设置粗字体
-    @discardableResult
+    @discardableResult  public
     func boldFont(_ fontSize:CGFloat) -> Self{
         font = UIFont.boldSystemFont(ofSize: fontSize)
         return self
     }
     
     ///设置文字颜色
-    @discardableResult
+    @discardableResult  public
     func textColor(_ color:UIColor) -> Self {
         textColor = color
         return self
     }
     
     ///是否可以编辑
-    @discardableResult
+    @discardableResult  public
     func editable(_ isEdit:Bool = false) -> Self {
         isEditable = isEdit
         return self
     }
     
     //是否可以滑动
-    @discardableResult
+    @discardableResult  public
     func scrollEnabled(_ isScorll:Bool = false) -> Self {
         isScrollEnabled = isScorll
         return self

@@ -23,21 +23,21 @@
 
 import UIKit
 
-protocol LYViewConvenience {}
+public protocol LYViewConvenience {}
 
 extension UIView:LYViewConvenience{
     public var ly: LYViewConvenienceFunc { return LYViewConvenienceFunc(self) }
 }
 
-protocol LYCollectionViewFlowLayoutConvenience {}
+public protocol LYCollectionViewFlowLayoutConvenience {}
 
 extension UICollectionViewFlowLayout:LYCollectionViewFlowLayoutConvenience{}
 
-protocol LYMutableAttributedStringConvenience {}
+public protocol LYMutableAttributedStringConvenience {}
 
 extension NSMutableAttributedString:LYMutableAttributedStringConvenience{}
 
-protocol LYImageConvenience {}
+public protocol LYImageConvenience {}
 
 extension UIImage:LYImageConvenience{}
 

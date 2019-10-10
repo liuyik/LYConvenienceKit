@@ -32,7 +32,7 @@ public struct LYDoubleConvenienceFunc {
     }
     
     ///把数字精确到小数点后第 position 位，不足 position 位补 0，然后四舍五入(注：position = -1 四舍五入后个位数为0)
-    func accuracyToString(position: Int) -> String {
+    public func accuracyToString(position: Int) -> String {
         
         //四舍五入
         let roundingBehavior = NSDecimalNumberHandler(roundingMode: .plain, scale: Int16(position), raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: true)
@@ -74,7 +74,7 @@ public struct LYDoubleConvenienceFunc {
     }
     
     ///时间戳转年份函数
-    func timeStampToDate()->Date {
+    public func timeStampToDate()->Date {
         let timeStamp:TimeInterval = double
         let date = Date(timeIntervalSince1970: timeStamp)
         return date

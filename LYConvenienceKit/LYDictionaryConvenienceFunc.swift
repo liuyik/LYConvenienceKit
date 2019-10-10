@@ -17,7 +17,7 @@ public struct LYDictionaryConvenienceFunc {
     }
     
     /// 判断读取网络数据的时候是不是空值 ,返回Array<Any>
-    func getReadArr(_ field:String)->Array<Any>{
+    public func getReadArr(_ field:String)->Array<Any>{
         var resultArr:Array<Any>=[]
         if(dictionary[field] is NSNull){
             
@@ -30,7 +30,7 @@ public struct LYDictionaryConvenienceFunc {
     }
     
     /// 判断读取网络数据的时候是不是空值 返回[[String:Any]]
-    func getReadArrDic(_ field:String)->[[String:Any]]{
+    public func getReadArrDic(_ field:String)->[[String:Any]]{
         var resultArr:[[String:Any]]=[]
         if(dictionary[field] is NSNull){
             
@@ -43,7 +43,7 @@ public struct LYDictionaryConvenienceFunc {
     }
     
     /// 判断读取网络数据的时候是不是空值 返回[String:Any]
-    func getReadDic(_ field:String)->[String:Any]{
+    public func getReadDic(_ field:String)->[String:Any]{
         var resultDic:[String:Any]=[:]
         if(dictionary[field] is NSNull){
             
@@ -57,7 +57,7 @@ public struct LYDictionaryConvenienceFunc {
     }
     
     ///判断读取的时候是不是空值 返回String
-    func getReadString(_ field:String,val:String="",suffix:String="")->String{
+    public func getReadString(_ field:String,val:String="",suffix:String="")->String{
         var str:String=val
         if(dictionary[field] is NSNull){
             
@@ -73,7 +73,7 @@ public struct LYDictionaryConvenienceFunc {
     }
     
     ///判断读取的时候是不是空值 返回Int
-    func getReadInt(_ field:String,val:Int=0)->Int{
+    public func getReadInt(_ field:String,val:Int=0)->Int{
         var rel:Int=val
         if(dictionary[field] is NSNull){
             
@@ -90,7 +90,7 @@ public struct LYDictionaryConvenienceFunc {
     }
     
     ///判断读取的时候是不是空值 返回Float
-    func getReadCGFlaot(_ field:String,val:Float=0)->Float{
+    public func getReadCGFlaot(_ field:String,val:Float=0)->Float{
         var rel:Float=val
         if(dictionary[field] is NSNull){
             
@@ -107,7 +107,7 @@ public struct LYDictionaryConvenienceFunc {
     }
     
     ///判断读取的时候是不是空值 返回Double
-    func getReadDouble(_ field:String,val:Double=0)->Double{
+    public func getReadDouble(_ field:String,val:Double=0)->Double{
         var rel:Double=val
         if(dictionary[field] is NSNull){
             

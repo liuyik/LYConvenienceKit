@@ -26,22 +26,22 @@ import UIKit
 public struct LYScreenSize{
     
     ///屏幕宽
-    static var width: CGFloat = UIScreen.main.bounds.width
+    public static var width: CGFloat = UIScreen.main.bounds.width
        
     ///屏幕高
-    static var height: CGFloat = UIScreen.main.bounds.height
+    public static var height: CGFloat = UIScreen.main.bounds.height
     
     
     ///屏幕宽比
-    static var RateWidth:CGFloat = width/375.0
+    public static var RateWidth:CGFloat = width/375.0
     
     ///屏幕高比
-    static var RateHeight:CGFloat = height/667.0
+    public static var RateHeight:CGFloat = height/667.0
     
     ///pad屏幕宽比
-    static var PadRateWidth:CGFloat = width/768.0
+    public static var PadRateWidth:CGFloat = width/768.0
    
     ///pad屏幕高比
-    static var PadRateHeight:CGFloat = height/1024.0
+    public static var PadRateHeight:CGFloat = height/1024.0
     
 }

@@ -23,7 +23,7 @@
 
 import UIKit
 ///混合属性
-struct LYMixtureAttribute {
+public struct LYMixtureAttribute {
     var string: String = ""
     var color: UIColor = .black
     var font: UIFont = UIFont.systemFont(ofSize: 14)
@@ -33,7 +33,7 @@ struct LYMixtureAttribute {
 extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedString {
     
     ///设置属性文本
-    @discardableResult
+    @discardableResult  public
     func mixtureAttributString(_ mixtureAttribute:LYMixtureAttribute) -> Self{
         
         var attribute = mixtureAttribute.attributes
@@ -47,7 +47,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///修改行距
-    @discardableResult
+    @discardableResult  public
     func changeLineSpace(_ lineSpacing: CGFloat = 8) -> Self {
         
         let paragraphStyle = NSMutableParagraphStyle()
@@ -62,7 +62,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///添加下滑线
-    @discardableResult
+    @discardableResult  public
     func addUnderline(_ lineColor:UIColor = .black,_ lineStyle:NSUnderlineStyle = NSUnderlineStyle.single) -> Self {
         
         //设置下划线...
@@ -83,7 +83,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///添加删除线
-    @discardableResult
+    @discardableResult  public
     func addStrikethrough(_ strikethroughColor:UIColor = .black) -> Self {
         
         let length = self.length
@@ -98,7 +98,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///添加图片(默认添加到最后，position添加到具体位置)
-    @discardableResult
+    @discardableResult  public
     func addImage(_ image:UIImage,bounds:CGRect,position:Int? = nil) -> Self {
         
         let arkattch = NSTextAttachment() //定义一个attachment
@@ -117,7 +117,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     
     //MARK: - 字符串中查找给定子串并标记
     ///标记第一个子串
-    @discardableResult
+    @discardableResult  public
     func markerStringOf(_ mixtureAttribute:LYMixtureAttribute)-> Self {
         let str = self.string
         
@@ -134,7 +134,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///标记所有子串(一般用于搜索时标记所有搜索关键字)
-    @discardableResult
+    @discardableResult  public
     func markerAllStringOf(_ mixtureAttribute:LYMixtureAttribute) -> Self{
         let subString = mixtureAttribute.string
         let arr:[NSRange] = ranges(of: subString).map{NSRange($0, in: subString)}
@@ -178,7 +178,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     
     
     ///计算AttributedString的size
-    func ly_calculationAttributedStringSize(attributed: NSAttributedString, size: CGSize,options:NSStringDrawingOptions = .usesLineFragmentOrigin) -> CGSize {
+    public func ly_calculationAttributedStringSize(attributed: NSAttributedString, size: CGSize,options:NSStringDrawingOptions = .usesLineFragmentOrigin) -> CGSize {
         
         let size = self.boundingRect(with: size, options: options, context: nil).size
         

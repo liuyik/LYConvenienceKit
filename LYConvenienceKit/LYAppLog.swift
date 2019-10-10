@@ -9,7 +9,7 @@
 import UIKit
 
 ///调试模式下打印
-func LYAppLog<T>(_ message: T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)
+public func LYAppLog<T>(_ message: T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)
 {
     #if DEBUG
     // 要把路径最后的字符串截取出来

@@ -26,49 +26,49 @@ import UIKit
 extension LYViewConvenience where Self: UITextField {
    
     ///设置提示文字
-    @discardableResult
+    @discardableResult  public
     func placeholder(_ placeholder:String?) -> Self{
         self.placeholder = placeholder
         return self
     }
     
     ///设置文字
-    @discardableResult
+    @discardableResult  public
     func text(_ text:String?) -> Self{
         self.text = text
         return self
     }
     
     ///设置属性文本
-    @discardableResult
+    @discardableResult  public
     func attributedText(_ attributedString:NSAttributedString?) -> Self {
         attributedText = attributedString
         return self
     }
     
     ///设置字体
-    @discardableResult
+    @discardableResult  public
     func font(_ font:CGFloat) -> Self{
         self.font = UIFont.systemFont(ofSize: font)
         return self
     }
     
     ///设置粗字体
-    @discardableResult
+    @discardableResult  public
     func boldFont(_ font:CGFloat) -> Self{
         self.font = UIFont.boldSystemFont(ofSize: font)
         return self
     }
     
     ///设置文字颜色
-    @discardableResult
+    @discardableResult  public
     func textColor(_ color:UIColor) -> Self {
         self.textColor = color
         return self
     }
     
     ///添加左边视图； v=nil时，w为文字到左边的距离
-    @discardableResult
+    @discardableResult  public
     func addLeftRetractView(_ w:CGFloat=10,view:UIView?=nil) -> Self {
         if view != nil {
             leftView = view
@@ -81,7 +81,7 @@ extension LYViewConvenience where Self: UITextField {
     }
     
     ///添加右边视图；v=nil时，w为文字到右边的距离
-    @discardableResult
+    @discardableResult  public
     func addRightRetractView(_ w:CGFloat=10,view:UIView?=nil) -> Self {
         if view != nil {
             rightView = view
@@ -94,7 +94,7 @@ extension LYViewConvenience where Self: UITextField {
     }
     
     ///添加事件
-    @discardableResult
+    @discardableResult  public
     func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event = .editingChanged) -> Self{
         addTarget(target, action: action, for: controlEvents)
         return self

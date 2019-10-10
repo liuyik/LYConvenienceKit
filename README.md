@@ -13,6 +13,10 @@ pod 'LYConvenienceKit'
 
 
 ## 简单使用：（注：可下载demo具体查看） 
+```
+//这样导入后整个项目可用
+@_exported import LYConvenienceKit
+```
 UILable
 ```
 let lable = UILabel()

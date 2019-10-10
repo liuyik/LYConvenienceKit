@@ -26,7 +26,7 @@ import UIKit
 extension LYImageConvenience where Self: UIImage {
     
     ///图片设置圆角
-    func ly_cornerImage(_ cornerRadii: CGSize,byRoundingCorners: UIRectCorner = UIRectCorner.allCorners) -> UIImage? {
+    public func ly_cornerImage(_ cornerRadii: CGSize,byRoundingCorners: UIRectCorner = UIRectCorner.allCorners) -> UIImage? {
         
         let imageRect = CGRect(origin: CGPoint.zero, size: size)
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
@@ -53,7 +53,7 @@ extension LYImageConvenience where Self: UIImage {
      *  maxLength 压缩后最大多少kb
      *  return 压缩后图片的二进制
      */
-    func ly_compressImage(_ maxLength: Int = 100) -> Data? {
+    public func ly_compressImage(_ maxLength: Int = 100) -> Data? {
        
         var compress:CGFloat = 0.9
         
@@ -72,7 +72,7 @@ extension LYImageConvenience where Self: UIImage {
     *  注：size中width或height为0时，会按图片比例计算长高
     *  return 压缩后图片的二进制
     */
-    func ly_resizeImage(changedSize: CGSize = CGSize(width: 375, height: 0)) -> UIImage{
+    public func ly_resizeImage(changedSize: CGSize = CGSize(width: 375, height: 0)) -> UIImage{
         
         //prepare constants
         let width = self.size.width
@@ -122,7 +122,7 @@ extension LYImageConvenience where Self: UIImage {
     }
     
     ///图片转颜色
-    func ly_color() -> UIColor {
+    public func ly_color() -> UIColor {
         
         return UIColor(patternImage: self)
     }

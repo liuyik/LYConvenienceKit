@@ -33,7 +33,7 @@ public struct LYDateConvenienceFunc {
     }
     
     ///日期转换成字符串
-    func dateToString(format:String="yyyy-MM-dd")->String{
+    public func dateToString(format:String="yyyy-MM-dd")->String{
         
         let dateFormatter: DateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "zh_CN")
@@ -43,7 +43,7 @@ public struct LYDateConvenienceFunc {
     }
     
     /// 判断当前日期是否为今年
-    func isThisYear() -> Bool {
+    public func isThisYear() -> Bool {
         
         // 获取当前日历
         let calender = Calendar.current
@@ -55,7 +55,7 @@ public struct LYDateConvenienceFunc {
     }
     
     /// 是否是昨天
-    func isYesterday() -> Bool {
+    public func isYesterday() -> Bool {
         
         // 获取当前日历
         let calender = Calendar.current
@@ -66,7 +66,7 @@ public struct LYDateConvenienceFunc {
     }
     
     /// 是否是前天
-    func isBeforeYesterday() -> Bool {
+    public func isBeforeYesterday() -> Bool {
         
         // 获取当前日历
         let calender = Calendar.current
@@ -77,7 +77,7 @@ public struct LYDateConvenienceFunc {
     }
     
     /// 判断是否是今天
-    func isToday() -> Bool {
+    public func isToday() -> Bool {
         
         // 日期格式化
         
