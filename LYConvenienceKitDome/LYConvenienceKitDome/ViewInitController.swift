@@ -62,12 +62,13 @@ class ViewInitController: UIViewController {
         
         if initType == .string {
             let str = lable1.text!.ly.md5String()
+            LYAppLog(str)
             let astr:NSMutableAttributedString = str.ly.attributedString()
             astr.mixtureAttributString(LYMixtureAttribute(string: "红色", color: .red, font: UIFont.systemFont(ofSize: 20)))
                 .mixtureAttributString(LYMixtureAttribute(string: "蓝色", color: .blue, font: UIFont.systemFont(ofSize: 25)))
                 .addUnderline(.yellow)
                 .addStrikethrough(.yellow)
-                .addImage(#imageLiteral(resourceName: "ly_placeholder"), bounds: CGRect(x: 0, y: 0, width:100, height: 20))
+                .addImage(#imageLiteral(resourceName: "YELLOW2d"), bounds: CGRect(x: 0, y: 0, width:40, height: 40))
                 .changeLineSpace(50)
                 .markerStringOf(LYMixtureAttribute(string: "b", color: .yellow, font: UIFont.systemFont(ofSize: 30)))
                 .markerAllStringOf(LYMixtureAttribute(string: "4", color: .orange, font: UIFont.systemFont(ofSize: 30)))
@@ -116,7 +117,7 @@ class ViewInitController: UIViewController {
             .title("highlighted", .highlighted)
             .titleColor(.red)
             .titleColor(.yellow,.highlighted)
-            .backgroundImage(#imageLiteral(resourceName: "ly_placeholder"))
+            .backgroundColor(UIColor.blue)
             .font(20)
             .layout(view) { (make) in
                 make.top.equalTo(100)
@@ -142,7 +143,7 @@ class ViewInitController: UIViewController {
     //MARK: 创建imageView
     func createImageView() {
         UIImageView()
-            .image(#imageLiteral(resourceName: "ly_placeholder.png"))
+            .image(#imageLiteral(resourceName: "YELLOW2d"))
             .contentMode(.center)
             .layout(view) { (make) in
             make.edges.equalToSuperview()

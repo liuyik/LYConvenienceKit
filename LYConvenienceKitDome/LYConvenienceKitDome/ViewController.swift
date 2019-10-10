@@ -7,6 +7,7 @@
 //
 
 import UIKit
+@_exported import LYConvenienceKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     

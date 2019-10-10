@@ -25,21 +25,16 @@ import UIKit
 ///混合属性
 public struct LYMixtureAttribute {
     
-    public init(string:String="",
-                color:UIColor=.black,
-                font:UIFont=UIFont.systemFont(ofSize: 14),
-                attributes:[NSAttributedString.Key : Any] = [:]) {
+    public init(string:String,color:UIColor,font:UIFont,attributes:[NSAttributedString.Key : Any] = [:]) {
         self.string = string
         self.color = color
         self.font = font
         self.attributes = attributes
     }
-    
     public var string: String = ""
     public var color: UIColor = .black
     public var font: UIFont = UIFont.systemFont(ofSize: 14)
     public var attributes:[NSAttributedString.Key : Any] = [:]
-    
 }
 
 extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedString {

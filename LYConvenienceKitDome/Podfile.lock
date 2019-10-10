@@ -1,22 +1,26 @@
 PODS:
-  - Kingfisher (5.8.1):
-    - Kingfisher/Core (= 5.8.1)
-  - Kingfisher/Core (5.8.1)
+  - Kingfisher (5.8.3):
+    - Kingfisher/Core (= 5.8.3)
+  - Kingfisher/Core (5.8.3)
+  - LYConvenienceKit (1.0.1):
+    - Kingfisher
+    - SnapKit
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Kingfisher
-  - SnapKit
+  - LYConvenienceKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Kingfisher
+    - LYConvenienceKit
     - SnapKit
 
 SPEC CHECKSUMS:
-  Kingfisher: de969e451c81ca6c07a454bc36fea84b8b08c3c7
+  Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
+  LYConvenienceKit: e8c343bc0d9e4f53f49c101c586930a91662ce40
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: ba68a38872888e4d75fe84bfb07991b7ff43365d
+PODFILE CHECKSUM: 3e672c858deb76189c3ba79622e4cd19f6b018ae
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.8.3

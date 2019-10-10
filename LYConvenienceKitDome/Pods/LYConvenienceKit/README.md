@@ -3,18 +3,18 @@
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/?q=LYConvenienceKit)
 ![Language](https://img.shields.io/badge/language-swift-orange.svg?style=flat)
 
+
 ## 支持pod导入：
 
 ```
 pod 'LYConvenienceKit'
 ```
-## 使用说明：
 
-LYConvenienceKit依赖了[SnapKit](https://github.com/SnapKit/SnapKit.git)和[Alamofire](https://github.com/Alamofire/Alamofire.git)两个框架，pod时会导入这两个框架
+
 
 ## 简单使用：（注：可下载demo具体查看） 
 ```
-//这样导入一次后整个项目可用
+//这样导入后整个项目可用
 @_exported import LYConvenienceKit
 ```
 UILable
@@ -44,9 +44,7 @@ UITableView
                 make.edges.equalToSuperview()
         }
 ```
-## 参考
-[SnapKit](https://github.com/SnapKit/SnapKit.git)
-[Alamofire](https://github.com/Alamofire/Alamofire.git)
+
 ## 结尾语：
 
 - 使用过程中发现bug请issues

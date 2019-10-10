@@ -8,10 +8,7 @@ target 'LYConvenienceKitDome' do
   use_frameworks!
 
 # Pods for LYConvenienceKitDome
-# 加载提示
-  pod 'SnapKit'
-# 网络请求
-  pod 'Kingfisher'
 
+  pod 'LYConvenienceKit'
 
 end
