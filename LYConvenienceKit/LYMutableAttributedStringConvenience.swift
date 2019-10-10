@@ -25,9 +25,9 @@ import UIKit
 ///混合属性
 public struct LYMixtureAttribute {
     
-    public init(string:String="",
-                color:UIColor=.black,
-                font:UIFont=UIFont.systemFont(ofSize: 14),
+    public init(string:String = "",
+                color:UIColor = .black,
+                font:UIFont = UIFont.systemFont(ofSize: 14),
                 attributes:[NSAttributedString.Key : Any] = [:]) {
         self.string = string
         self.color = color
