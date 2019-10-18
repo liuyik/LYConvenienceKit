@@ -127,15 +127,15 @@ class ViewInitController: UIViewController {
             }
         
         UIButton(frame: CGRect(x: 0, y: 0, width: LYScreenSize.width-100, height: 40))
-        .title("图片在文字右边")
-        .image(#imageLiteral(resourceName: "YELLOW2d"))
-        .font(15)
-        .changeImagePosition(.right)
-        .layout(view) { (make) in
-            make.top.equalTo(200)
-            make.left.equalTo(50)
-            make.right.equalTo(-50)
-            make.height.equalTo(40)
+            .title("图片在文字右边")
+            .image(#imageLiteral(resourceName: "YELLOW2d"))
+            .font(15)
+            .changeImagePosition(.right)
+            .layout(view) { (make) in
+                make.top.equalTo(200)
+                make.left.equalTo(50)
+                make.right.equalTo(-50)
+                make.height.equalTo(40)
         }
         
     }

@@ -67,6 +67,13 @@ extension LYViewConvenience where Self: UITextField {
         return self
     }
     
+    ///设置密文输入
+    @discardableResult  public
+    func secureTextEntry(_ isSecure:Bool = true) -> Self {
+        isSecureTextEntry = isSecure
+        return self
+    }
+    
     ///添加左边视图； v=nil时，w为文字到左边的距离
     @discardableResult  public
     func addLeftRetractView(_ w:CGFloat=10,view:UIView?=nil) -> Self {
