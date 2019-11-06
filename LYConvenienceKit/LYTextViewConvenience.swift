@@ -33,7 +33,6 @@ extension LYViewConvenience where Self: UITextView {
         let placeholderLabel = UILabel()
             .text(placeholder)
             .textColor(placeholderColor)
-            .hidden()
      
         placeholderLabel.font = self.font
         placeholderLabel.sizeToFit()
@@ -46,6 +45,13 @@ extension LYViewConvenience where Self: UITextView {
     @discardableResult  public
     func text(_ textString:String?) -> Self{
         text = textString
+        return self
+    }
+    
+    ///delegate
+    @discardableResult  public
+    func delegate(_ target: Any?) -> Self{
+        delegate = target as? UITextViewDelegate
         return self
     }
  

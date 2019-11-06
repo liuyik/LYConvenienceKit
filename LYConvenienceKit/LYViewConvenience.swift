@@ -48,6 +48,13 @@ extension LYViewConvenience where Self: UIView {
     
     ///设置背景颜色
     @discardableResult  public
+    func tag(_ tag:Int) -> Self{
+        self.tag = tag
+        return self
+    }
+    
+    ///设置背景颜色
+    @discardableResult  public
     func backgroundColor(_ color:UIColor) -> Self{
         self.backgroundColor = color
         return self

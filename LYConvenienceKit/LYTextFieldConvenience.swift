@@ -24,7 +24,14 @@
 import UIKit
 
 extension LYViewConvenience where Self: UITextField {
-   
+       
+    ///delegate
+    @discardableResult  public
+    func delegate(_ target: Any?) -> Self{
+        delegate = target as? UITextFieldDelegate
+        return self
+    }
+    
     ///设置提示文字
     @discardableResult  public
     func placeholder(_ placeholder:String?) -> Self{
