@@ -156,7 +156,7 @@ class ViewInitController: UIViewController {
         let textView = UITextView()
             .textColor(.red)
             .font(25)
-            .text("test")
+//            .text("test")
             .placeholder("请输入文字")
             .editable(true)
             .scrollEnabled(true)

@@ -1,8 +1,8 @@
 PODS:
-  - Kingfisher (5.8.3):
-    - Kingfisher/Core (= 5.8.3)
-  - Kingfisher/Core (5.8.3)
-  - LYConvenienceKit (1.0.3):
+  - Kingfisher (5.9.0):
+    - Kingfisher/Core (= 5.9.0)
+  - Kingfisher/Core (5.9.0)
+  - LYConvenienceKit (1.0.5):
     - Kingfisher
     - SnapKit
   - SnapKit (5.0.1)
@@ -17,8 +17,8 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
-  LYConvenienceKit: b509ebbbe5801b8894d4a20dda56da99879ab5f6
+  Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
+  LYConvenienceKit: 586d9d997c625a9302d714c3ab2223a86bcf2076
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
 PODFILE CHECKSUM: 3e672c858deb76189c3ba79622e4cd19f6b018ae
