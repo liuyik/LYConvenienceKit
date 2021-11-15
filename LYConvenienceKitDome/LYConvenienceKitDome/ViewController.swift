@@ -9,17 +9,36 @@
 import UIKit
 @_exported import LYConvenienceKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    
+enum InitType {
+    case label
+    case button
+    case imageView
+    case textView
+    case textField
+    case collectionView
+}
 
-    var data = [["UILable(包含设置圆角边框等)","UIButton","UIImageView","UITextView","UITextField","UICollectionViewAndColor"],["NSMutableAttributedString"]]
+enum DataType {
+    case string
+    case attributedString
+    case date
+}
+
+class ViewController: UIViewController {
     
-    var data2:[[InitType]] = [[InitType.label,InitType.button,InitType.imageView,InitType.textView,InitType.textField,InitType.collectionView],[InitType.string]]
+    var titles : [String] = ["View","DataType"]
+    
+    var data1 = ["UILable(包含设置圆角边框等)","UIButton","UIImageView","UITextView","UITextField","UICollectionViewAndColor"]
+    var data2 = ["String","AttributedString","Date"]
+    
+    var typeData1 = [InitType.label,InitType.button,InitType.imageView,InitType.textView,InitType.textField,InitType.collectionView]
+    var typeData2 = [DataType.string,DataType.attributedString,DataType.date]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.isTranslucent = false
+        self.title = "LYConvenienceKit"
         //创建UITableView
         UITableView()
             .estimatedRowHeight(40)
@@ -30,29 +49,35 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             .registerHeaderFooterClass(TabHeaderView.self)
             .layout(view) { (make) in
                 make.edges.equalToSuperview()
-        }
+            }
+    }
 }
-
+ 
+//MARK: - UITableViewDelegate,UITableViewDataSource
+extension ViewController : UITableViewDelegate,UITableViewDataSource {
     
-    //MARK: - UITableViewDelegate,UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return data.count
+        return titles.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return data[section].count
+        if section == 0 {return data1.count}
+        return data2.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.ly_dequeueReusableCell(UITableViewCell.self, indexPath)
-        cell.textLabel?.text = data[indexPath.section][indexPath.row]
+        if indexPath.section == 0 {
+            cell.textLabel?.text = data1[indexPath.row]
+        }else {
+            cell.textLabel?.text = data2[indexPath.row]
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = tableView.ly_dequeueReusableHeaderFooter(TabHeaderView.self)
-        view?.titlLabel?.text = section == 0 ? "View" : "Sting"
+        view?.titlLabel?.text = titles[section]
         return view
     }
 
@@ -63,9 +88,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let vc = ViewInitController()
-        vc.initType = data2[indexPath.section][indexPath.row]
-        self.navigationController?.pushViewController(vc, animated: true)
+        if indexPath.section == 0 {
+            let vc = ViewInitController()
+            vc.title = data1[indexPath.row]
+            vc.initType = typeData1[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else {
+            let vc = DataController()
+            vc.title = data2[indexPath.row]
+            vc.dataType = typeData2[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

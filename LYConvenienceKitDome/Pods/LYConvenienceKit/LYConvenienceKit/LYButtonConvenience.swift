@@ -26,58 +26,58 @@ import UIKit
 extension LYViewConvenience where Self: UIButton {
    
     ///设置标题
-    @discardableResult  public
+    @discardableResult public
     func title(_ title:String?,_ state:UIControl.State = .normal) -> Self{
         setTitle(title, for: state)
         return self
     }
     
     ///设置标题颜色
-    @discardableResult  public
+    @discardableResult public
     func titleColor(_ color:UIColor,_ state:UIControl.State = .normal) -> Self {
         setTitleColor(color, for: state)
         return self
     }
     
     ///设置字体
-    @discardableResult  public
+    @discardableResult public
     func font(_ font:CGFloat) -> Self{
         titleLabel?.font = UIFont.systemFont(ofSize: font)
         return self
     }
     
     ///设置粗字体
-    @discardableResult  public
+    @discardableResult public
     func boldFont(_ font:CGFloat) -> Self{
         titleLabel?.font = UIFont.boldSystemFont(ofSize: font)
         return self
     }
     
     ///设置图片
-    @discardableResult  public
+    @discardableResult public
     func image(_ image:UIImage?,_ state:UIControl.State = .normal) -> Self {
         setImage(image, for: state)
         return self
     }
     
     ///设置背景图片
-    @discardableResult  public
+    @discardableResult public
     func backgroundImage(_ image:UIImage?,_ state:UIControl.State = .normal) -> Self {
         setBackgroundImage(image, for: state)
         return self
     }
     
     ///添加点击事件
-    @discardableResult  public
+    @discardableResult public
     func addClickTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event = .touchUpInside) -> Self{
         addTarget(target, action: action, for: controlEvents)
         return self
     }
     
-    /// 修改按钮图片的位置（要先设置按钮的frame）
+    /// 修改按钮图片的位置（要先设置按钮的frame：size要大于图片加文字的size）
     /// - parameter position: .top:图片在上 .left:图片在左 .bottom:图片在下 .right:图片在右
     /// - parameter spacing: 图片与文字的间隙
-    @discardableResult  public
+    @discardableResult public
     func changeImagePosition(_ position: UIView.ContentMode, _ spacing: CGFloat = 5) -> Self{
         
         let imageSize = self.imageRect(forContentRect:self.frame)
@@ -129,7 +129,7 @@ extension LYViewConvenience where Self: UIButton {
     }
     
     ///添加下划线，top:离文字底部的距离
-    @discardableResult  public
+    @discardableResult public
     func addUnderline(_ top:CGFloat = 0,_ height:CGFloat = 1) -> Self{
         
         guard let titLabel = titleLabel else {return self}
@@ -145,15 +145,15 @@ extension LYViewConvenience where Self: UIButton {
         return self
     }
     
-    ///验证码倒计时
-    public func ly_countDown(_ count: Int,_ title:String = "发送验证码"){
+    ///验证码倒计时(注意销毁timer，列：设置全局codeTimer = codeBtn.ly_countDown（60），然后在deinit {codeTimer?.cancel();codeTimer = nil})
+    public func ly_countDown(_ count: Int,_ title:String = "发送验证码",countDownBgColor:UIColor = UIColor.gray) -> DispatchSourceTimer?{
         // 倒计时开始,禁止点击事件
         isEnabled = false
         
         // 保存当前的背景颜色
         let defaultColor = self.backgroundColor
         // 设置倒计时,按钮背景颜色
-        backgroundColor = UIColor.gray
+        backgroundColor = countDownBgColor
         
         var remainingCount: Int = count {
             willSet {
@@ -166,11 +166,11 @@ extension LYViewConvenience where Self: UIButton {
         }
         
         // 在global线程里创建一个时间源
-        let codeTimer = DispatchSource.makeTimerSource(queue:DispatchQueue.global())
+        var codeTimer : DispatchSourceTimer? = DispatchSource.makeTimerSource(queue:DispatchQueue.global())
         // 设定这个时间源是每秒循环一次，立即开始
-        codeTimer.schedule(deadline: .now(), repeating: .seconds(1))
+        codeTimer?.schedule(deadline: .now(), repeating: .seconds(1))
         // 设定时间源的触发事件
-        codeTimer.setEventHandler(handler: {
+        codeTimer?.setEventHandler(handler: {
             
             // 返回主线程处理一些事件，更新UI等等
             DispatchQueue.main.async {
@@ -180,11 +180,14 @@ extension LYViewConvenience where Self: UIButton {
                 if remainingCount <= 0 {
                     self.backgroundColor = defaultColor
                     self.isEnabled = true
-                    codeTimer.cancel()
+                    codeTimer?.cancel()
+                    codeTimer = nil
                 }
             }
         })
         // 启动时间源
-        codeTimer.resume()
+        codeTimer?.resume()
+        
+        return codeTimer
     }
 }

@@ -11,56 +11,56 @@ import UIKit
 extension LYCollectionViewFlowLayoutConvenience where Self: UICollectionViewFlowLayout {
     
     ///最小行间隙
-    @discardableResult  public
+    @discardableResult public
     func minimumLineSpacing(_ spacing:CGFloat = 0) -> Self {
         minimumLineSpacing = spacing
         return self
     }
     
     ///最小列间隙
-    @discardableResult  public
+    @discardableResult public
     func minimumInteritemSpacing(_ spacing:CGFloat = 0) -> Self {
         minimumInteritemSpacing = spacing
         return self
     }
     
     ///itemSize
-    @discardableResult  public
+    @discardableResult public
     func itemSize(_ size:CGSize) -> Self {
         itemSize = size
         return self
     }
     
     ///估算itemSize
-    @discardableResult  public
+    @discardableResult public
     func estimatedItemSize(_ size:CGSize) -> Self {
         estimatedItemSize = size
         return self
     }
     
     ///滑动方向
-    @discardableResult  public
+    @discardableResult public
     func scrollDirection(_ direction:UICollectionView.ScrollDirection = .vertical) -> Self {
         scrollDirection = direction
         return self
     }
 
     ///headerSize
-    @discardableResult  public
+    @discardableResult public
     func headerReferenceSize(_ size:CGSize) -> Self {
         headerReferenceSize = size
         return self
     }
     
     ///footerSize
-    @discardableResult  public
+    @discardableResult public
     func footerReferenceSize(_ size:CGSize) -> Self {
         footerReferenceSize = size
         return self
     }
 
     ///sectionInset
-    @discardableResult  public
+    @discardableResult public
     func sectionInset(_ inset:UIEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)) -> Self {
         sectionInset = inset
         return self
@@ -68,7 +68,7 @@ extension LYCollectionViewFlowLayoutConvenience where Self: UICollectionViewFlow
 
     ///sectionHeaders是否悬浮
     @available(iOS 9.0, *)
-    @discardableResult  public
+    @discardableResult public
     func sectionHeadersPinToVisibleBounds(_ isVisible:Bool = true) -> Self{
         sectionHeadersPinToVisibleBounds = isVisible
         return self
@@ -76,7 +76,7 @@ extension LYCollectionViewFlowLayoutConvenience where Self: UICollectionViewFlow
     
     ///sectionFooters是否悬浮
     @available(iOS 9.0, *)
-    @discardableResult  public
+    @discardableResult public
     func sectionFootersPinToVisibleBounds(_ isVisible:Bool = true) -> Self{
         sectionFootersPinToVisibleBounds = isVisible
         return self
@@ -86,14 +86,14 @@ extension LYCollectionViewFlowLayoutConvenience where Self: UICollectionViewFlow
 extension LYViewConvenience where Self: UICollectionView {
     
     ///delegate
-    @discardableResult  public
+    @discardableResult public
     func delegate(_ target: Any?) -> Self{
         delegate = target as? UICollectionViewDelegate
         return self
     }
     
     ///dataSource
-    @discardableResult  public
+    @discardableResult public
     func dataSource(_ target: Any?) -> Self{
         dataSource = target as? UICollectionViewDataSource
         return self
@@ -101,7 +101,7 @@ extension LYViewConvenience where Self: UICollectionView {
     
     // MARK: - cell register and reuse
     ///注册xibCell
-    @discardableResult  public
+    @discardableResult public
     func registerCellNib<T: UICollectionViewCell>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         let nib = UINib(nibName: name, bundle: nil)
@@ -110,7 +110,7 @@ extension LYViewConvenience where Self: UICollectionView {
     }
        
     ///注册Cell
-    @discardableResult  public
+    @discardableResult public
     func registerCellClass<T: UICollectionViewCell>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         register(aClass, forCellWithReuseIdentifier: name)
@@ -118,7 +118,7 @@ extension LYViewConvenience where Self: UICollectionView {
     }
     
     ///重用的cell
-    @discardableResult  public
+    @discardableResult public
     func ly_dequeueReusableCell<T: UICollectionViewCell>(_ aClass: T.Type,_ indexPath: IndexPath) -> T {
         let name = String(describing: aClass)
     
@@ -128,7 +128,7 @@ extension LYViewConvenience where Self: UICollectionView {
     
     // MARK: - HeaderFooter register and reuse
     ///注册xibHeaderFooter
-    @discardableResult  public
+    @discardableResult public
     func registerHeaderFooterNib<T: UIView>(_ aClass: T.Type,_ isHeader:Bool = true) -> Self{
         let name = String(describing: aClass)
         let nib = UINib(nibName: name, bundle: nil)
@@ -138,7 +138,7 @@ extension LYViewConvenience where Self: UICollectionView {
     }
        
     ///注册HeaderFooter
-    @discardableResult  public
+    @discardableResult public
     func registerHeaderFooterClass<T: UICollectionReusableView>(_ aClass: T.Type,_ isHeader:Bool = true) -> Self{
         let name = String(describing: aClass)
         let kind = isHeader ? UICollectionView.elementKindSectionHeader:UICollectionView.elementKindSectionFooter
@@ -147,7 +147,7 @@ extension LYViewConvenience where Self: UICollectionView {
     }
     
     ///重用HeaderFooter
-    @discardableResult  public
+    @discardableResult public
     func ly_dequeueReusableHeaderFooter<T: UICollectionReusableView>(_ aClass: T.Type,_ kind:String,_ indexPath: IndexPath) -> T {
         let name = String(describing: aClass)
         let cell = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: name, for: indexPath)

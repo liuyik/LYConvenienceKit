@@ -41,6 +41,10 @@ public protocol LYImageConvenience {}
 
 extension UIImage:LYImageConvenience{}
 
+public protocol LYBundleConvenience {}
+
+extension Bundle:LYBundleConvenience{}
+
 extension String {
     public var ly: LYStringConvenienceFunc { return LYStringConvenienceFunc(self) }
 }

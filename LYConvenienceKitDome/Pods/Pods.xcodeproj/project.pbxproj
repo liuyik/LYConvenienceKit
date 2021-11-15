@@ -48,7 +48,6 @@
 		62AD7D42C96A04828EEA3CC151AA5E38 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E112C7D9EF608EEF8B6D12BA9B338EF /* RedirectHandler.swift */; };
 		634ACD05981DA3E00182D5D212BF185D /* LYMutableAttributedStringConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50F0540C44FE61861832CE4128EB90 /* LYMutableAttributedStringConvenience.swift */; };
 		63C2BA763C69F183DDB32456D7201543 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA610A61D557B8873D42AE2143268C /* Filter.swift */; };
-		6437C3E49F6EE77762FD1170CE2F4310 /* ly_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE6C17354EBDA95719DA5FD5140FAC6 /* ly_placeholder.png */; };
 		64C5A1A4556424B168FC3C67DA91D8C7 /* LYDateConvenienceFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EA1AF270955CD9D443EA3AC85EDE3 /* LYDateConvenienceFunc.swift */; };
 		64D34EEA09418ED0C1CF98E5B2A7D488 /* LYScrollViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338622A4DBA72E2348979766E28F3466 /* LYScrollViewConvenience.swift */; };
 		6804393EA55473086BC9AC4FE08F33F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7A1B4C01AF7C6F545A6C980D92F3DB /* Foundation.framework */; };
@@ -63,7 +62,7 @@
 		767925B99CC34D22E127120952AC715D /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855588774822B561D76A28DD18326F39 /* Runtime.swift */; };
 		76B531CE9BB634A3DE6C092219DFF974 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B793795DF396E05F2338D02D4956F /* ConstraintInsetTarget.swift */; };
 		7AC68C586CE704CC799298DE08EA9A83 /* Pods-LYConvenienceKitDome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412CC477A08712862C83D7179D1C4F9 /* Pods-LYConvenienceKitDome-dummy.m */; };
-		7E004E96AEDB4AD1543A7BEBE1C47C97 /* LYViewCommonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D0CE04E9FFF9519DE5DA4EB4775CD1 /* LYViewCommonFunc.swift */; };
+		7E004E96AEDB4AD1543A7BEBE1C47C97 /* LYViewConvenienceFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D0CE04E9FFF9519DE5DA4EB4775CD1 /* LYViewConvenienceFunc.swift */; };
 		80F1CE5131DA37F9DF6516F927C78F16 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A37D99F311194CAAC3385E86DC43B /* KingfisherManager.swift */; };
 		82901CC2904C16E88787E8BDD5F3C372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7A1B4C01AF7C6F545A6C980D92F3DB /* Foundation.framework */; };
 		84FB7295031BEDF0073A52A61AF7129A /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8F86957741186FF5A0664AF46C099B /* Kingfisher.swift */; };
@@ -113,6 +112,8 @@
 		D55C05708B5D9CC04970CE683B79019C /* LYImageViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779CB82D739ACCFFE15EA2D31CBB6182 /* LYImageViewConvenience.swift */; };
 		D61E75DDED528B2B21DE5EA4EF57C6F7 /* LYCollectionViewConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42523D1EB4BF05AB22246BEC38AB28DF /* LYCollectionViewConvenience.swift */; };
 		D621992FD15059928BD4CC4EBD976348 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7737D78DC9575B589DEE0312883F11 /* ConstraintMaker.swift */; };
+		D656B43C273CF67500FD993F /* LYBundleConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D656B43B273CF67400FD993F /* LYBundleConvenience.swift */; };
+		D656B43E273CFDEF00FD993F /* LYConvenienceKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D656B43D273CFDEF00FD993F /* LYConvenienceKit.bundle */; };
 		DA99B45A48F1E8CF88BF6BAFFB59D0DA /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC2B4FB3C9831DDC2DB7B17A0F63F5 /* ConstraintPriorityTarget.swift */; };
 		DE121F1848D87C3C56261ABE6F8604DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7A1B4C01AF7C6F545A6C980D92F3DB /* Foundation.framework */; };
 		E1449D08A15FE3B6495489915D20042B /* LYDoubleConvenienceFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA4CD6FF5BDA57887F96F0BAB2EFF1 /* LYDoubleConvenienceFunc.swift */; };
@@ -201,7 +202,7 @@
 		3412CC477A08712862C83D7179D1C4F9 /* Pods-LYConvenienceKitDome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LYConvenienceKitDome-dummy.m"; sourceTree = "<group>"; };
 		34A7867F8C6E8D34D27F6CE4C5D7C0C4 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		36A169A6A7B10071B7868BBBD7DE702D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		36D0CE04E9FFF9519DE5DA4EB4775CD1 /* LYViewCommonFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LYViewCommonFunc.swift; path = LYConvenienceKit/LYViewCommonFunc.swift; sourceTree = "<group>"; };
+		36D0CE04E9FFF9519DE5DA4EB4775CD1 /* LYViewConvenienceFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LYViewConvenienceFunc.swift; path = LYConvenienceKit/LYViewConvenienceFunc.swift; sourceTree = "<group>"; };
 		3878038F4569724569FC067B278A7378 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		3AB0B7E20E645BF3E63254E7E13B5890 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		3F8E4A213FE07BF729EE31878E68486B /* Pods-LYConvenienceKitDome-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYConvenienceKitDome-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -243,7 +244,7 @@
 		7C32C2946BF54C4DE3A64D4B1ADAF6D6 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
 		7EB6ADAF9DDF512B0D354D29D106C14E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		80860B377F4F3DB2134F60EC9EEDBE54 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		83332C846D2F747178D71FCDE26C73B1 /* LYConvenienceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LYConvenienceKit.framework; path = LYConvenienceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83332C846D2F747178D71FCDE26C73B1 /* LYConvenienceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LYConvenienceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		855588774822B561D76A28DD18326F39 /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Utility/Runtime.swift; sourceTree = "<group>"; };
 		86EA610A61D557B8873D42AE2143268C /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Image/Filter.swift; sourceTree = "<group>"; };
 		87B3ED7F572F8D07EE2EBCCA75400F95 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
@@ -255,11 +256,11 @@
 		8E112C7D9EF608EEF8B6D12BA9B338EF /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Sources/Networking/RedirectHandler.swift; sourceTree = "<group>"; };
 		941FC41D58F6C2C213C8CD1E98AEE2CD /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		957B793795DF396E05F2338D02D4956F /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9902949B7B59BC5717B2789004118E7F /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderDelegate.swift; path = Sources/Networking/ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
 		9C7A1B4C01AF7C6F545A6C980D92F3DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D450EC20716A0FE60E120D6C8B4DB88 /* LYUIColorExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LYUIColorExt.swift; path = LYConvenienceKit/LYUIColorExt.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FB864E7082ADEA314FD5107DC930EAD /* ImageProgressive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProgressive.swift; path = Sources/Image/ImageProgressive.swift; sourceTree = "<group>"; };
 		A19A37D99F311194CAAC3385E86DC43B /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/General/KingfisherManager.swift; sourceTree = "<group>"; };
 		A20D81C469DCE83D5639A4D2FB57DA65 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/General/Deprecated.swift; sourceTree = "<group>"; };
@@ -282,7 +283,7 @@
 		BE82AC795ACD151B90D31948675E99B6 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/Image/ImageTransition.swift; sourceTree = "<group>"; };
 		C14D8B21D04A3F95DB4B2A5F75343C28 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		C3A69F8D067CA07CC3BACF2B92E880B5 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C559D97D9502C0ED8851D2DBD7313A9C /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/Extensions/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		C741EF3497E2D0B7D41AD45513AE1D88 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		C8CB224CC1C9D762000966F379910EE1 /* CallbackQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackQueue.swift; path = Sources/Utility/CallbackQueue.swift; sourceTree = "<group>"; };
@@ -291,7 +292,9 @@
 		D303CFD7E71205E5D9D556281B77F677 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/Networking/ImageModifier.swift; sourceTree = "<group>"; };
 		D5B4A31A331340A718B0295469E8D316 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		D601FD45F54945F813B85C4BBFF197DD /* LYTextViewConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LYTextViewConvenience.swift; path = LYConvenienceKit/LYTextViewConvenience.swift; sourceTree = "<group>"; };
-		D66AFF40CEA98471D6F0BB7370EAC0C3 /* Pods_LYConvenienceKitDome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LYConvenienceKitDome.framework; path = "Pods-LYConvenienceKitDome.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D656B43B273CF67400FD993F /* LYBundleConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LYBundleConvenience.swift; path = LYConvenienceKit/LYBundleConvenience.swift; sourceTree = "<group>"; };
+		D656B43D273CFDEF00FD993F /* LYConvenienceKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = LYConvenienceKit.bundle; path = LYConvenienceKit/LYConvenienceKit.bundle; sourceTree = "<group>"; };
+		D66AFF40CEA98471D6F0BB7370EAC0C3 /* Pods_LYConvenienceKitDome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYConvenienceKitDome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87555D62696362AB4903537CA548C0A /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		D8786DC765AB6EE4547D7968DD39BD38 /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Sources/General/ImageSource/Source.swift; sourceTree = "<group>"; };
 		DB89578DA2DBE2C81E4BD39F31C28FC6 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
@@ -302,7 +305,6 @@
 		E5AC2B4FB3C9831DDC2DB7B17A0F63F5 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		E7B62EF99C08703678272CF37ABF0448 /* LYTextFieldConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LYTextFieldConvenience.swift; path = LYConvenienceKit/LYTextFieldConvenience.swift; sourceTree = "<group>"; };
 		E908657B652852CD5EE5541C29EC24DA /* LYScreenConvenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LYScreenConvenience.swift; path = LYConvenienceKit/LYScreenConvenience.swift; sourceTree = "<group>"; };
-		EDE6C17354EBDA95719DA5FD5140FAC6 /* ly_placeholder.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ly_placeholder.png; path = LYConvenienceKit/ly_placeholder.png; sourceTree = "<group>"; };
 		EF999B3E7ED38F3B115248EA48840940 /* Pods-LYConvenienceKitDome-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LYConvenienceKitDome-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F1DFA32BB97ACE42834A89EE2FB643BE /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		F1F1876655D3DC806F318ACEFA46E9B9 /* KingfisherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherError.swift; path = Sources/General/KingfisherError.swift; sourceTree = "<group>"; };
@@ -386,7 +388,7 @@
 		5C74D262AC27A2E497230C626704B96F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EDE6C17354EBDA95719DA5FD5140FAC6 /* ly_placeholder.png */,
+				D656B43D273CFDEF00FD993F /* LYConvenienceKit.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -473,7 +475,6 @@
 				2D73CA6E5DCC649FF2E6766305190275 /* UILayoutSupport+Extensions.swift */,
 				55AF8C2032C55144432214981B52BE2A /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -575,12 +576,12 @@
 				D601FD45F54945F813B85C4BBFF197DD /* LYTextViewConvenience.swift */,
 				9D450EC20716A0FE60E120D6C8B4DB88 /* LYUIColorExt.swift */,
 				E4D060C284BE5CC101D85C3FE4BA47F1 /* LYUIViewExt.swift */,
-				36D0CE04E9FFF9519DE5DA4EB4775CD1 /* LYViewCommonFunc.swift */,
+				36D0CE04E9FFF9519DE5DA4EB4775CD1 /* LYViewConvenienceFunc.swift */,
 				B373F0579F6BEF1D61A8763D0BDF49A7 /* LYViewConvenience.swift */,
+				D656B43B273CF67400FD993F /* LYBundleConvenience.swift */,
 				5C74D262AC27A2E497230C626704B96F /* Resources */,
 				5FAB3A8475A6043524732D0292BF7F6C /* Support Files */,
 			);
-			name = LYConvenienceKit;
 			path = LYConvenienceKit;
 			sourceTree = "<group>";
 		};
@@ -609,7 +610,6 @@
 				869924AD16D78FEB5520B0C6E26DD78D /* Core */,
 				0EF7AA1958E0213816613B8ECFE02654 /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -787,7 +787,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6437C3E49F6EE77762FD1170CE2F4310 /* ly_placeholder.png in Resources */,
+				D656B43E273CFDEF00FD993F /* LYConvenienceKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +807,7 @@
 			files = (
 				3886ABF3A8727949D2F94897FAAA341F /* LYAppLog.swift in Sources */,
 				0364DFE08E34DA3399E9BE7D576D8636 /* LYButtonConvenience.swift in Sources */,
+				D656B43C273CF67500FD993F /* LYBundleConvenience.swift in Sources */,
 				D61E75DDED528B2B21DE5EA4EF57C6F7 /* LYCollectionViewConvenience.swift in Sources */,
 				E8330A2369FFBAD4F8AB83E7CF50FA66 /* LYConvenienceKit-dummy.m in Sources */,
 				57274139071510B88434D40F4720E631 /* LYConvenienceProtocol.swift in Sources */,
@@ -825,7 +826,7 @@
 				EF216E01D9618F353025C9FF11EEECEA /* LYTextViewConvenience.swift in Sources */,
 				2AAF89E65DFB059C91954A433445731A /* LYUIColorExt.swift in Sources */,
 				C8F6EB4E7357D0ADE983F388DCD940AF /* LYUIViewExt.swift in Sources */,
-				7E004E96AEDB4AD1543A7BEBE1C47C97 /* LYViewCommonFunc.swift in Sources */,
+				7E004E96AEDB4AD1543A7BEBE1C47C97 /* LYViewConvenienceFunc.swift in Sources */,
 				9439511F54748F016B60AD04C6ED8E32 /* LYViewConvenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

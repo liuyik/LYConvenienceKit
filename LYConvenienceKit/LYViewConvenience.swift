@@ -36,7 +36,7 @@ extension LYViewConvenience where Self: UIView {
     }
     
     ///加约束
-    @discardableResult  public
+    @discardableResult public
     func layout(_ superV:UIView, snapMaker: (ConstraintMaker) ->Void) -> Self {
         
         superV.addSubview(self)
@@ -47,21 +47,21 @@ extension LYViewConvenience where Self: UIView {
     }
     
     ///设置背景颜色
-    @discardableResult  public
+    @discardableResult public
     func tag(_ tag:Int) -> Self{
         self.tag = tag
         return self
     }
     
     ///设置背景颜色
-    @discardableResult  public
+    @discardableResult public
     func backgroundColor(_ color:UIColor) -> Self{
         self.backgroundColor = color
         return self
     }
     
     ///设置边框
-    @discardableResult  public
+    @discardableResult public
     func layerBorder(_ bWidth:CGFloat = 1,
                      _ bColor:UIColor = #colorLiteral(red: 0.8509803922, green: 0.8509803922, blue: 0.8509803922, alpha: 1)) ->Self{
     
@@ -72,7 +72,7 @@ extension LYViewConvenience where Self: UIView {
     }
     
     ///设置圆角
-    @discardableResult  public
+    @discardableResult public
     func layerRadius(_ radius:CGFloat = 5,
                      _ isMasks:Bool = false) -> Self{
         
@@ -82,28 +82,28 @@ extension LYViewConvenience where Self: UIView {
     }
     
     ///设置填充模式
-    @discardableResult  public
+    @discardableResult public
     func contentMode(_ mode:UIView.ContentMode) -> Self{
         contentMode = mode
         return self
     }
     
     //是否能点击
-    @discardableResult  public
+    @discardableResult public
     func userEnabled(_ isEnable:Bool = false) -> Self{
         isUserInteractionEnabled = isEnable
         return self
     }
     
     ///是否隐藏
-    @discardableResult  public
+    @discardableResult public
     func hidden(_ isHid:Bool = true) -> Self {
         isHidden = isHid
         return self
     }
     
     ///添加点击事件
-    @discardableResult  public
+    @discardableResult public
     func addTarget(target: Any?, action: Selector?)-> Self{
         isUserInteractionEnabled = true
         addGestureRecognizer(UITapGestureRecognizer(target: target, action: action))

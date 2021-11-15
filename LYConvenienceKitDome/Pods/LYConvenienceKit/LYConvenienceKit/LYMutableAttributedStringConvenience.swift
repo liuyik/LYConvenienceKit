@@ -45,7 +45,7 @@ public struct LYMixtureAttribute {
 extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedString {
     
     ///设置属性文本
-    @discardableResult  public
+    @discardableResult public
     func mixtureAttributString(_ mixtureAttribute:LYMixtureAttribute) -> Self{
         
         var attribute = mixtureAttribute.attributes
@@ -59,7 +59,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///修改行距
-    @discardableResult  public
+    @discardableResult public
     func changeLineSpace(_ lineSpacing: CGFloat = 8) -> Self {
         
         let paragraphStyle = NSMutableParagraphStyle()
@@ -74,7 +74,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///添加下滑线
-    @discardableResult  public
+    @discardableResult public
     func addUnderline(_ lineColor:UIColor = .black,_ lineStyle:NSUnderlineStyle = NSUnderlineStyle.single) -> Self {
         
         //设置下划线...
@@ -95,7 +95,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///添加删除线
-    @discardableResult  public
+    @discardableResult public
     func addStrikethrough(_ strikethroughColor:UIColor = .black) -> Self {
         
         let length = self.length
@@ -110,7 +110,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///添加图片(默认添加到最后，position添加到具体位置)
-    @discardableResult  public
+    @discardableResult public
     func addImage(_ image:UIImage,bounds:CGRect,position:Int? = nil) -> Self {
         
         let arkattch = NSTextAttachment() //定义一个attachment
@@ -129,7 +129,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     
     //MARK: - 字符串中查找给定子串并标记
     ///标记第一个子串
-    @discardableResult  public
+    @discardableResult public
     func markerStringOf(_ mixtureAttribute:LYMixtureAttribute)-> Self {
         let str = self.string
         
@@ -146,7 +146,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
     }
     
     ///标记所有子串(一般用于搜索时标记所有搜索关键字)
-    @discardableResult  public
+    @discardableResult public
     func markerAllStringOf(_ mixtureAttribute:LYMixtureAttribute) -> Self{
         let subString = mixtureAttribute.string
         let arr:[NSRange] = ranges(of: subString).map{NSRange($0, in: subString)}
@@ -161,7 +161,7 @@ extension LYMutableAttributedStringConvenience where Self: NSMutableAttributedSt
         return self
     }
     
-    /*字符串中查找给定子串的所有Range
+    /**字符串中查找给定子串的所有Range
      *1、初始化时先设置查找范围为整个字符串
      *2、若能通过查找得到子串的Range，进入循环
      *3、保存子串Range到数组

@@ -81,15 +81,31 @@ public struct LYStringConvenienceFunc {
         return htmlStr
     }
       
+    /// 日期字符串转date
+    /// - Parameter format: 当前字符串格式
+    /// - Returns: Date
+    public func formatToDate(format:String="yyyy-MM-dd")->Date?{
+
+        let dateFormatter: DateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "zh_CN")
+        dateFormatter.dateFormat = format
+        return dateFormatter.date(from: string)
+    }
+    
     ///日期字符串，转换成另一种格式的字符串
+    /// - Parameter format: 当前字符串格式
+    /// - Parameter newFormat: 要转换的日期格式
+    /// - Returns: String
     public func formatToNewFormat(_ format:String,newFormat:String="yyyy-MM-dd")->String{
 
         let dateFormatter: DateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "zh_CN")
         dateFormatter.dateFormat = format
-        let date = dateFormatter.date(from: string)
-        dateFormatter.dateFormat = newFormat
-        if date != nil {
-            return dateFormatter.string(from: date!)
+        
+        if let date = dateFormatter.date(from: string) {
+            
+            dateFormatter.dateFormat = newFormat
+            return dateFormatter.string(from: date)
         }
         return ""
     }

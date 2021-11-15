@@ -8,24 +8,22 @@
 
 import UIKit
 
-enum InitType {
-    case label
-    case button
-    case imageView
-    case textView
-    case textField
-    case collectionView
-    case string
-}
-
 class ViewInitController: UIViewController {
 
+    deinit {
+        codeTimer?.cancel()
+        codeTimer = nil
+        LYAppLog("ViewInitController释放")
+    }
+    var codeTimer : DispatchSourceTimer?
     
     var initType: InitType = .label
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor(.white)
+        
         switch initType {
         
         case .label:
@@ -40,13 +38,14 @@ class ViewInitController: UIViewController {
             createTextField()
         case .collectionView:
             createCollectionView()
-        case .string:
-            createLable()
         }
        
     }
+}
+
+//MARK: 创建Label
+extension ViewInitController {
     
-    //MARK: 创建Label
     func createLable() {
         let lable1 = UILabel()
             .text("test")
@@ -58,23 +57,6 @@ class ViewInitController: UIViewController {
                 make.top.equalTo(100)
                 make.left.equalTo(100)
                 make.right.equalTo(-100)
-        }
-        
-        if initType == .string {
-            let str = lable1.text!.ly.md5String()
-            LYAppLog(str)
-            let astr:NSMutableAttributedString = str.ly.attributedString()
-            astr.mixtureAttributString(LYMixtureAttribute(string: "红色", color: .red, font: UIFont.systemFont(ofSize: 20)))
-                .mixtureAttributString(LYMixtureAttribute(string: "蓝色", color: .blue, font: UIFont.systemFont(ofSize: 25)))
-                .addUnderline(.yellow)
-                .addStrikethrough(.yellow)
-                .addImage(#imageLiteral(resourceName: "YELLOW2d"), bounds: CGRect(x: 0, y: 0, width:40, height: 40))
-                .changeLineSpace(50)
-                .markerStringOf(LYMixtureAttribute(string: "b", color: .yellow, font: UIFont.systemFont(ofSize: 30)))
-                .markerAllStringOf(LYMixtureAttribute(string: "4", color: .orange, font: UIFont.systemFont(ofSize: 30)))
-            
-            lable1.attributedText(astr)
-            return
         }
         
         let lable2 = UILabel()
@@ -108,8 +90,11 @@ class ViewInitController: UIViewController {
         lable3.ly.layerRoundingCorners(corners: [.topLeft,.bottomLeft], radius: 50)
         lable3.ly.layerBorder(color: .red, width: 2, type: [.right,.top])
     }
+}
+
+//MARK: 创建button
+extension ViewInitController {
     
-    //MARK: 创建button
     func createButton() {
         
         UIButton()
@@ -117,8 +102,22 @@ class ViewInitController: UIViewController {
             .title("highlighted", .highlighted)
             .titleColor(.red)
             .titleColor(.yellow,.highlighted)
+            .addUnderline()
+            .addUnderline(2)
             .backgroundColor(UIColor.blue)
             .font(20)
+            .layout(view) { (make) in
+                make.top.equalTo(50)
+                make.left.equalTo(100)
+                make.right.equalTo(-100)
+                make.height.equalTo(40)
+            }
+        
+        UIButton()
+            .title("发送验证码")
+            .backgroundColor(UIColor.blue)
+            .font(20)
+            .addClickTarget(self, action: #selector(codeClickAciton))
             .layout(view) { (make) in
                 make.top.equalTo(100)
                 make.left.equalTo(100)
@@ -128,6 +127,7 @@ class ViewInitController: UIViewController {
         
         UIButton(frame: CGRect(x: 0, y: 0, width: LYScreenSize.width-100, height: 40))
             .title("图片在文字右边")
+            .titleColor(.red)
             .image(#imageLiteral(resourceName: "YELLOW2d"))
             .font(15)
             .changeImagePosition(.right)
@@ -138,19 +138,57 @@ class ViewInitController: UIViewController {
                 make.height.equalTo(40)
         }
         
+        UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 100))
+            .title("图片在文字上面")
+            .titleColor(.red)
+            .image(#imageLiteral(resourceName: "YELLOW2d"))
+            .font(15)
+            .changeImagePosition(.top)
+            .layout(view) { (make) in
+                make.top.equalTo(300)
+                make.centerX.equalToSuperview()
+                make.width.equalTo(150)
+                make.height.equalTo(100)
+        }
+        
     }
     
-    //MARK: 创建imageView
+    //点击发送验证码
+    @objc func codeClickAciton(_ codeBtn : UIButton) {
+        codeTimer = codeBtn.ly_countDown(60)
+    }
+    
+}
+
+//MARK: 创建imageView
+extension ViewInitController {
+    
     func createImageView() {
         UIImageView()
             .image(#imageLiteral(resourceName: "YELLOW2d"))
             .contentMode(.center)
             .layout(view) { (make) in
-            make.edges.equalToSuperview()
-        }
+                make.top.equalTo(50)
+                make.left.equalTo(50)
+                make.width.height.equalTo(40)
+            }
+        
+        let imgView = UIImageView()
+            .layout(view) { (make) in
+                make.top.equalTo(100)
+                make.left.right.equalToSuperview()
+                make.height.equalTo(120)
+            }
+//        imgView.ly_setKfImage("")
+//        imgView.ly_setKfImage("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.52112.com%2F180413%2F180413_4%2FRAfngtFLy3_small.jpg&refer=http%3A%2F%2Fpic.52112.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1639211162&t=428a19f6ca9872fff18eff2f32654365","bg001")
+        imgView.ly_setKfImage("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.52112.com%2F180413%2F180413_4%2FRAfngtFLy3_small.jpg&refer=http%3A%2F%2Fpic.52112.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1639211162&t=428a19f6ca9872fff18eff2f32654365", placeholder: #imageLiteral(resourceName: "bg001"))
     }
     
-    //MARK: 创建textView
+}
+
+//MARK: 创建textView
+extension ViewInitController {
+    
     func createTextView() {
         
         let textView = UITextView()
@@ -166,6 +204,7 @@ class ViewInitController: UIViewController {
                 make.right.equalTo(-100)
                 make.height.equalTo(100)
         }
+        
         if #available(iOS 11.0, *) {
             textView.contentInsetAdjustmentBehavior = .never
         } else {
@@ -173,7 +212,11 @@ class ViewInitController: UIViewController {
         }
     }
     
-    //MARK: 创建textField
+}
+
+//MARK: 创建textField
+extension ViewInitController {
+    
     func createTextField() {
         UITextField()
             .placeholder("请输入文字")
@@ -185,9 +228,23 @@ class ViewInitController: UIViewController {
                 make.left.equalTo(100)
                 make.right.equalTo(-100)
         }
+        
+        UITextField()
+            .placeholder("请输入手机号码")
+            .textColor(.red)
+            .keyboardType(.phonePad)
+            .font(25)
+            .layout(view) { (make) in
+                make.top.equalTo(200)
+                make.left.equalTo(100)
+                make.right.equalTo(-100)
+        }
     }
+}
+
+//MARK: 创建collectionView
+extension ViewInitController {
     
-    //MARK: 创建collectionView
     func createCollectionView() {
         let layout = UICollectionViewFlowLayout()
             .minimumLineSpacing(10)
@@ -198,13 +255,14 @@ class ViewInitController: UIViewController {
             .headerReferenceSize(CGSize(width: 200, height: 40))
         
         let collectView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+            .backgroundColor(.white)
             .delegate(self)
             .dataSource(self)
             .registerCellClass(UICollectionViewCell.self)
             .registerHeaderFooterClass(ColHeaderView.self)
             .layout(view) { (make) in
                 make.edges.equalToSuperview()
-        }
+            }
         
         if #available(iOS 11.0, *) {
             collectView.contentInsetAdjustmentBehavior = .never
@@ -212,20 +270,21 @@ class ViewInitController: UIViewController {
             automaticallyAdjustsScrollViewInsets = false
         }
     }
- 
-    let colors:[UIColor.LYColorStyle] = [UIColor.LYColorStyle.defaulted,
-                                         UIColor.LYColorStyle.title,
-                                         UIColor.LYColorStyle.content,
-                                         UIColor.LYColorStyle.secondary,
-                                         UIColor.LYColorStyle.placeholder,
-                                         UIColor.LYColorStyle.click,
-                                         UIColor.LYColorStyle.emphasize,
-                                         UIColor.LYColorStyle.navigationLine,
-                                         UIColor.LYColorStyle.partingLine,
-                                         UIColor.LYColorStyle.backgroundView]
 }
+let colors:[UIColor.LYColorStyle] = [UIColor.LYColorStyle.defaulted,
+                                     UIColor.LYColorStyle.title,
+                                     UIColor.LYColorStyle.content,
+                                     UIColor.LYColorStyle.secondary,
+                                     UIColor.LYColorStyle.placeholder,
+                                     UIColor.LYColorStyle.click,
+                                     UIColor.LYColorStyle.emphasize,
+                                     UIColor.LYColorStyle.navigationLine,
+                                     UIColor.LYColorStyle.partingLine,
+                                     UIColor.LYColorStyle.backgroundView]
 
+//MARK: - UICollectionViewDelegate,UICollectionViewDataSource
 extension ViewInitController:UICollectionViewDelegate,UICollectionViewDataSource {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }

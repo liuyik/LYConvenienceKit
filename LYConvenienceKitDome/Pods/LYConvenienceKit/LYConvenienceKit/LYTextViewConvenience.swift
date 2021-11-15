@@ -26,72 +26,82 @@ import UIKit
 extension LYViewConvenience where Self: UITextView {
    
     ///设置提示文字(注意)
-    @discardableResult  public
+    @discardableResult public
     func placeholder(_ placeholder:String?,_ placeholderColor:UIColor=UIColor(.placeholder)) -> Self{
 
-        //提示
-        let placeholderLabel = UILabel()
+        var placeholderLabel = self.viewWithTag(9999) as? UILabel
+        if placeholderLabel == nil {
+            let label = UILabel().tag(9999)
+            self.addSubview(label)
+            self.setValue(label, forKey: "_placeholderLabel")
+            placeholderLabel = label
+        }
+        placeholderLabel?
             .text(placeholder)
             .textColor(placeholderColor)
-     
-        placeholderLabel.font = self.font
-        placeholderLabel.sizeToFit()
-        self.addSubview(placeholderLabel)
-        self.setValue(placeholderLabel, forKey: "_placeholderLabel")
+        placeholderLabel?.font = font
+        
         return self
     }
     
     ///设置文字
-    @discardableResult  public
+    @discardableResult public
     func text(_ textString:String?) -> Self{
         text = textString
         return self
     }
     
     ///delegate
-    @discardableResult  public
+    @discardableResult public
     func delegate(_ target: Any?) -> Self{
         delegate = target as? UITextViewDelegate
         return self
     }
  
     ///设置属性文本
-    @discardableResult  public
+    @discardableResult public
     func attributedText(_ attributedString:NSAttributedString?) -> Self {
         attributedText = attributedString
         return self
     }
     
     ///设置字体
-    @discardableResult  public
+    @discardableResult public
     func font(_ fontSize:CGFloat) -> Self{
         font = UIFont.systemFont(ofSize: fontSize)
         return self
     }
     
     ///设置粗字体
-    @discardableResult  public
+    @discardableResult public
     func boldFont(_ fontSize:CGFloat) -> Self{
         font = UIFont.boldSystemFont(ofSize: fontSize)
         return self
     }
     
     ///设置文字颜色
-    @discardableResult  public
+    @discardableResult public
     func textColor(_ color:UIColor) -> Self {
         textColor = color
         return self
     }
     
+    ///设置键盘样式
+    @discardableResult public
+    func keyboardType(_ keyboardType:UIKeyboardType) -> Self {
+        self.keyboardType = keyboardType
+        return self
+    }
+    
     ///是否可以编辑
-    @discardableResult  public
+    @discardableResult public
     func editable(_ isEdit:Bool = false) -> Self {
         isEditable = isEdit
         return self
     }
     
     //是否可以滑动
-    @discardableResult  public
+    @discardableResult public
     func scrollEnabled(_ isScorll:Bool = false) -> Self {
         isScrollEnabled = isScorll
         return self

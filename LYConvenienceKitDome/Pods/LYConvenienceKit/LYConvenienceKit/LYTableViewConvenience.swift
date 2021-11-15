@@ -27,49 +27,49 @@ extension LYViewConvenience where Self: UITableView {
     
     // MARK: - 常用的属性
     ///设置cell的高度
-    @discardableResult  public
+    @discardableResult public
     func rowHeight(_ height:CGFloat = UITableView.automaticDimension) -> Self{
         rowHeight = height
         return self
     }
     
     ///估算cell的高度
-    @discardableResult  public
+    @discardableResult public
     func estimatedRowHeight(_ rowHeight:CGFloat = 44.0) -> Self{
         estimatedRowHeight = rowHeight
         return self
     }
     
     ///分割线样式
-    @discardableResult  public
+    @discardableResult public
     func separatorStyle(_ style:UITableViewCell.SeparatorStyle = .none) -> Self{
         separatorStyle = style
         return self
     }
     
     ///头视图
-    @discardableResult  public
+    @discardableResult public
     func tableHeaderView(_ headView:UIView) -> Self{
         tableHeaderView = headView
         return self
     }
     
     ///尾视图
-    @discardableResult  public
+    @discardableResult public
     func tableFooterView(_ footView:UIView) -> Self{
         tableFooterView = footView
         return self
     }
     
     ///delegate
-    @discardableResult  public
+    @discardableResult public
     func delegate(_ target: Any?) -> Self{
         delegate = target as? UITableViewDelegate
         return self
     }
     
     ///dataSource
-    @discardableResult  public
+    @discardableResult public
     func dataSource(_ target: Any?) -> Self{
         dataSource = target as? UITableViewDataSource
         return self
@@ -77,7 +77,7 @@ extension LYViewConvenience where Self: UITableView {
     
     // MARK: - cell register and reuse
     ///注册xibCell
-    @discardableResult  public
+    @discardableResult public
     func registerCellNib<T: UITableViewCell>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         let nib = UINib(nibName: name, bundle: nil)
@@ -86,7 +86,7 @@ extension LYViewConvenience where Self: UITableView {
     }
        
     ///注册Cell
-    @discardableResult  public
+    @discardableResult public
     func registerCellClass<T: UITableViewCell>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         register(aClass, forCellReuseIdentifier: name)
@@ -94,7 +94,7 @@ extension LYViewConvenience where Self: UITableView {
     }
     
     ///重用的cell
-    @discardableResult  public
+    @discardableResult public
     func ly_dequeueReusableCell<T: UITableViewCell>(_ aClass: T.Type,_ indexPath: IndexPath) -> T {
         let name = String(describing: aClass)
         
@@ -104,7 +104,7 @@ extension LYViewConvenience where Self: UITableView {
     
     // MARK: - HeaderFooter register and reuse
     ///注册xibHeaderFooter
-    @discardableResult  public
+    @discardableResult public
     func registerHeaderFooterNib<T: UITableViewHeaderFooterView>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         let nib = UINib(nibName: name, bundle: nil)
@@ -113,7 +113,7 @@ extension LYViewConvenience where Self: UITableView {
     }
        
     ///注册HeaderFooter
-    @discardableResult  public
+    @discardableResult public
     func registerHeaderFooterClass<T: UITableViewHeaderFooterView>(_ aClass: T.Type) -> Self{
         let name = String(describing: aClass)
         register(aClass, forHeaderFooterViewReuseIdentifier: name)
@@ -121,7 +121,7 @@ extension LYViewConvenience where Self: UITableView {
     }
     
     ///重用HeaderFooter
-    @discardableResult  public
+    @discardableResult public
     func ly_dequeueReusableHeaderFooter<T: UIView>(_ aClass: T.Type) -> T? {
         let name = String(describing: aClass)
         let cell = dequeueReusableHeaderFooterView(withIdentifier: name)
