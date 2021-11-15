@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/liuyik/LYConvenienceKit.git", :tag => "1.1.0" }
   spec.source_files = "LYConvenienceKit/*.swift"
-  spec.resources    = "LYConvenienceKit/*.bundle"
+  spec.resources    = "LYConvenienceKit/LYConvenienceKit.bundle"
   spec.exclude_files = "Classes/Exclude"
 
   spec.swift_version = '5.0'
