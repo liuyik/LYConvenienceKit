@@ -1,18 +1,17 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LYConvenienceKit"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "链式编程创建UI,和一些常用的func"
   spec.homepage     = "https://github.com/liuyik/LYConvenienceKit.git"
 
   spec.license      = "MIT"
  
-  spec.author             = { "刘毅" => "352601605@qq.com" }
+  spec.author       = { "刘毅" => "352601605@qq.com" }
   
-  spec.source       = { :git => "https://github.com/liuyik/LYConvenienceKit.git", :tag => "1.1.0" }
+  spec.source       = { :git => "https://github.com/liuyik/LYConvenienceKit.git", :tag => "1.1.1" }
   spec.source_files = "LYConvenienceKit/*.swift"
   spec.resources    = "LYConvenienceKit/LYConvenienceKit.bundle"
-  spec.exclude_files = "Classes/Exclude"
 
   spec.swift_version = '5.0'
 
