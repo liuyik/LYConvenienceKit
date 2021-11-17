@@ -40,9 +40,7 @@ extension LYViewConvenience where Self: UIView {
     func layout(_ superV:UIView, snapMaker: (ConstraintMaker) ->Void) -> Self {
         
         superV.addSubview(self)
-        self.snp.makeConstraints { (make) in
-            snapMaker(make)
-        }
+        self.snp.makeConstraints(snapMaker)
         return self
     }
     

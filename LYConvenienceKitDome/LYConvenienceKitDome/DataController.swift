@@ -37,12 +37,15 @@ class DataController: UIViewController {
         case .attributedString: attributedString()
             
         case .date : date()
-            
+        
+        case .image : image()
         }
     }
     
 
 }
+
+//MARK: - string
 extension DataController {
     
     func string() {
@@ -59,6 +62,8 @@ extension DataController {
         label.text = str
     }
 }
+
+//MARK: - attributedString
 extension DataController {
     
     func attributedString() {
@@ -78,6 +83,7 @@ extension DataController {
     }
 }
 
+//MARK: - Date
 extension DataController {
     
     func date() {
@@ -100,5 +106,112 @@ extension DataController {
         
         
         label.text = "今天\(date.ly.year)年\(date.ly.month)月\(date.ly.day)日\(date.ly.hour)时\(date.ly.minute)分\(date.ly.second)秒\n昨天\(yesterDay)\n明天\(tomorrowDay)\n前天\(theDayBeforYesterDay)\n后天\(theDayAfterTomorrowDay)\n\n\n\n判断日期\n\(theDay?.description(with: Locale.current) ?? "")是否是今年\(isThisYear)是否是昨天\(isYesterDay)是否是前天\(isBeforeYesterDay)是否是今天\(isToDay)是否是明天\(isTomorrowDay)是否是后天\(isAfterTomorrowDay)"
+    }
+}
+
+//MARK: - image
+extension DataController {
+    
+    func image() {
+        let img = #imageLiteral(resourceName: "bg001")
+        
+        let imgView = UIImageView()
+            .image(img)
+            .layout(scrollView) { (make) in
+                make.left.top.equalTo(10)
+                make.width.equalTo(LYScreenSize.width-20)
+                make.height.equalTo((LYScreenSize.width-20)/2.1)
+                make.right.equalTo(-10)
+            }
+        
+        
+        let imgView1 = UIImageView()
+            .contentMode(.scaleAspectFit)
+            .image(img.ly_cornerImage(CGSize(width: img.size.height/2, height: 0),byRounding: [.topLeft,.bottomRight]))
+            .layout(scrollView) { (make) in
+                make.top.equalTo(imgView.snp.bottom).offset(10)
+                make.left.equalTo(10)
+                make.width.equalTo(LYScreenSize.width-20)
+                make.height.equalTo((LYScreenSize.width-20)/2.1)
+            }
+        
+        let img1 = img.ly_cropping(to: CGRect(x: 0, y: 0, width: img.size.height, height: img.size.height))
+        let img2 = img1?.ly_cornerImage(CGSize(width: (img1?.size.height ?? 100)/2, height: 0))
+        let imgView2 = UIImageView()
+            .contentMode(.scaleAspectFit)
+            .image(img2)
+            .layout(scrollView) { (make) in
+                make.top.equalTo(imgView1.snp.bottom).offset(10)
+                make.left.equalTo(10)
+                make.width.equalTo((LYScreenSize.width-20)/2.1)
+                make.height.equalTo((LYScreenSize.width-20)/2.1)
+            }
+        
+        let img3 = img.ly_composeImageWithWatermark(#imageLiteral(resourceName: "icon"), imageFrame: CGRect(x: 50, y: 50, width: 50, height: 50))
+        
+        let imgView3 = UIImageView()
+            .contentMode(.scaleAspectFit)
+            .image(img3)
+            .layout(scrollView) { (make) in
+                make.top.equalTo(imgView2.snp.bottom).offset(10)
+                make.left.equalTo(10)
+                make.width.equalTo(LYScreenSize.width-20)
+                make.height.equalTo((LYScreenSize.width-20)/2.1)
+            }
+        
+        let img4 = img.ly_resizeImage(changedSize: CGSize(width: 10, height: 10/2.1))
+        let imgView4 = UIImageView()
+            .contentMode(.scaleAspectFit)
+            .image(img4)
+            .layout(scrollView) { (make) in
+                make.top.equalTo(imgView3.snp.bottom).offset(10)
+                make.left.equalTo(10)
+                make.width.equalTo(LYScreenSize.width-20)
+                make.height.equalTo((LYScreenSize.width-20)/2.1)
+            }
+        
+        LYAppLog(img.jpegData(compressionQuality:1)?.count)
+        let imgData = img.ly_compressImage(10)
+        LYAppLog(imgData?.count)
+        let img5 = UIImage(data: imgData!)
+        
+        let imgView5 = UIImageView()
+            .contentMode(.scaleAspectFit)
+            .image(img5)
+            .layout(scrollView) { (make) in
+                make.top.equalTo(imgView4.snp.bottom).offset(10)
+                make.left.equalTo(10)
+                make.width.equalTo(LYScreenSize.width-20)
+                make.height.equalTo((LYScreenSize.width-20)/2.1)
+        
+            }
+        
+        UIImageView()
+            .contentMode(.scaleAspectFit)
+            .image(UIColor.blue.ly_image())
+            .layout(scrollView) { (make) in
+                make.top.equalTo(imgView5.snp.bottom).offset(10)
+                make.left.equalTo(10)
+                make.width.equalTo(LYScreenSize.width-20)
+                make.height.equalTo((LYScreenSize.width-20)/2.1)
+                make.bottom.equalTo(-10)
+            }
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "截长图", style: .plain, target: self, action: #selector(screenShot))
+        
+    }
+    
+    @objc func screenShot() {
+        scrollView.ly_screenShot { image in
+            UIImageWriteToSavedPhotosAlbum(image!, self, #selector(self.image(image:didFinishSavingWithError:contextInfo:)), nil)
+        }
+    }
+    
+    @objc func image(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo:UnsafeRawPointer){
+        if error == nil {
+            LYAppLog("保存成功")
+        } else {
+            LYAppLog("保存失败")
+        }
     }
 }

@@ -10,5 +10,6 @@ target 'LYConvenienceKitDome' do
 # Pods for LYConvenienceKitDome
 
   pod 'LYConvenienceKit'
+  pod 'Kingfisher', '~> 5.15.8'
 
 end

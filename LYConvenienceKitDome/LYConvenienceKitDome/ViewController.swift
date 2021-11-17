@@ -22,6 +22,7 @@ enum DataType {
     case string
     case attributedString
     case date
+    case image
 }
 
 class ViewController: UIViewController {
@@ -29,10 +30,10 @@ class ViewController: UIViewController {
     var titles : [String] = ["View","DataType"]
     
     var data1 = ["UILable(包含设置圆角边框等)","UIButton","UIImageView","UITextView","UITextField","UICollectionViewAndColor"]
-    var data2 = ["String","AttributedString","Date"]
+    var data2 = ["String","AttributedString","Date","image"]
     
     var typeData1 = [InitType.label,InitType.button,InitType.imageView,InitType.textView,InitType.textField,InitType.collectionView]
-    var typeData2 = [DataType.string,DataType.attributedString,DataType.date]
+    var typeData2 = [DataType.string,DataType.attributedString,DataType.date,DataType.image]
     
     override func viewDidLoad() {
         super.viewDidLoad()

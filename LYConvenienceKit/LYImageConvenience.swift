@@ -26,20 +26,21 @@ import UIKit
 extension LYImageConvenience where Self: UIImage {
     
     ///图片设置圆角
-    public func ly_cornerImage(_ cornerRadii: CGSize,byRoundingCorners: UIRectCorner = UIRectCorner.allCorners) -> UIImage? {
+    /// - Parameter cornerRadii:圆角大小
+    /// - Parameter corners:任意角的圆角
+    public func ly_cornerImage(_ cornerRadii: CGSize,byRounding corners: UIRectCorner = UIRectCorner.allCorners) -> UIImage? {
         
         let imageRect = CGRect(origin: CGPoint.zero, size: size)
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         defer {
             UIGraphicsEndImageContext()
         }
-        let context = UIGraphicsGetCurrentContext()
-        guard context != nil else {
+        guard let context = UIGraphicsGetCurrentContext() else {
             return nil
         }
-        context?.setShouldAntialias(true)
+        context.setShouldAntialias(true)
         let bezierPath = UIBezierPath(roundedRect: imageRect,
-                                      byRoundingCorners: byRoundingCorners,
+                                      byRoundingCorners: corners,
                                       cornerRadii: cornerRadii)
         bezierPath.close()
         bezierPath.addClip()
@@ -48,16 +49,16 @@ extension LYImageConvenience where Self: UIImage {
     }
     
     
-    /**
-     *  压缩上传图片到指定kb
-     *  maxLength 压缩后最大多少kb
-     *  return 压缩后图片的二进制
-     */
+    ///压缩上传图片到指定kb
+    /// - Parameter maxLength: 压缩后最大多少kb
     public func ly_compressImage(_ maxLength: Int = 100) -> Data? {
        
         var compress:CGFloat = 0.9
         
         var data = self.jpegData(compressionQuality: compress)
+        if data?.count ?? 0 < maxLength {
+            return data
+        }
         while data?.count ?? 0 > maxLength*1024 && compress > 0.01 {
             compress -= 0.02
             data = self.jpegData(compressionQuality: compress)
@@ -66,12 +67,9 @@ extension LYImageConvenience where Self: UIImage {
         return data
     }
     
-    /**
-    *  压缩上传图片到指定size
-    *  changedSize 压缩后size
-    *  注：size中width或height为0时，会按图片比例计算长高
-    *  return 压缩后图片的二进制
-    */
+    ///压缩上传图片到指定size
+    /// - Parameter changedSize: 压缩后size
+    ///注：size中width或height为0时，会按图片比例计算长高
     public func ly_resizeImage(changedSize: CGSize = CGSize(width: 375, height: 0)) -> UIImage{
         
         //prepare constants
@@ -125,5 +123,53 @@ extension LYImageConvenience where Self: UIImage {
     public func ly_color() -> UIColor {
         
         return UIColor(patternImage: self)
+    }
+    
+    ///给图片加图片水印
+    /// - Parameter image: 图片水印
+    /// - Parameter imageFrame: 图片水印Frame
+    public func ly_composeImageWithWatermark(_ image: UIImage,
+                               imageFrame: CGRect) -> UIImage? {
+        //以Image的图大小为底图
+        guard let imageRef = self.cgImage  else {
+            return nil
+        }
+        let w: CGFloat = CGFloat(imageRef.width)
+        let h: CGFloat = CGFloat(imageRef.height)
+        //以1.png的图大小为画布创建上下文
+        UIGraphicsBeginImageContext(CGSize(width: w, height: h))
+        self.draw(in: CGRect(x: 0, y: 0, width: w, height: h))
+        //先把image 画到上下文中
+        let scale = self.scale
+        let x = imageFrame.origin.x * scale
+        let y = imageFrame.origin.y * scale
+        let width = imageFrame.size.width * scale
+        let height = imageFrame.size.height * scale
+        image.draw(in: CGRect(x: x, y: y, width: width, height: height))
+    
+        //再把小图放在上下文中
+        let resultImg: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
+        
+        //从当前上下文中获得最终图片
+        UIGraphicsEndImageContext()
+        return resultImg
+    }
+    
+    /// 截取图片的指定区域，并生成新图片
+    /// - Parameter rect: 指定的区域
+    public func ly_cropping(to rect: CGRect) -> UIImage? {
+        let scale = self.scale
+        let x = rect.origin.x * scale
+        let y = rect.origin.y * scale
+        let width = rect.size.width * scale
+        let height = rect.size.height * scale
+        let croppingRect = CGRect(x: x, y: y, width: width, height: height)
+        
+        // 截取部分图片并生成新图片
+        guard let sourceImageRef = self.cgImage else { return nil }
+        guard let newImageRef = sourceImageRef.cropping(to: croppingRect) else { return nil }
+        
+        let newImage =  UIImage(cgImage: newImageRef, scale: scale, orientation: self.imageOrientation)
+        return newImage
     }
 }

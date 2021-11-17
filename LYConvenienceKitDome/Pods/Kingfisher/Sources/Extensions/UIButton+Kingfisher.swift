@@ -91,6 +91,7 @@ extension KingfisherWrapper where Base: UIButton {
         let task = KingfisherManager.shared.retrieveImage(
             with: source,
             options: options,
+            downloadTaskUpdated: { mutatingSelf.imageTask = $0 },
             completionHandler: { result in
                 CallbackQueue.mainCurrentOrAsync.execute {
                     guard issuedIdentifier == self.taskIdentifier(for: state) else {
@@ -155,7 +156,7 @@ extension KingfisherWrapper where Base: UIButton {
         completionHandler: ((Result<RetrieveImageResult, KingfisherError>) -> Void)? = nil) -> DownloadTask?
     {
         return setImage(
-            with: resource.map { Source.network($0) },
+            with: resource?.convertToSource(),
             for: state,
             placeholder: placeholder,
             options: options,
@@ -232,6 +233,7 @@ extension KingfisherWrapper where Base: UIButton {
         let task = KingfisherManager.shared.retrieveImage(
             with: source,
             options: options,
+            downloadTaskUpdated: { mutatingSelf.backgroundImageTask = $0 },
             completionHandler: { result in
                 CallbackQueue.mainCurrentOrAsync.execute {
                     guard issuedIdentifier == self.backgroundTaskIdentifier(for: state) else {
@@ -296,7 +298,7 @@ extension KingfisherWrapper where Base: UIButton {
         completionHandler: ((Result<RetrieveImageResult, KingfisherError>) -> Void)? = nil) -> DownloadTask?
     {
         return setBackgroundImage(
-            with: resource.map { .network($0) },
+            with: resource?.convertToSource(),
             for: state,
             placeholder: placeholder,
             options: options,
