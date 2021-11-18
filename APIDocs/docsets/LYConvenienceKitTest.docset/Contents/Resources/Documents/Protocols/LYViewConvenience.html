@@ -1,0 +1,2875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LYViewConvenience Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/LYViewConvenience" class="dashAnchor"></a>
+    <a title="LYViewConvenience Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LYConvenienceKitTest 1.0.0 Docs</a> (75% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LYConvenienceKitTest Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        LYViewConvenience Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSBundle">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSMutableAttributedString">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)UICollectionViewFlowLayout">UICollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor/LYColorStyle.html">– LYColorStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor/LYGradientColorDirection.html">– LYGradientColorDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)UIImage">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:20LYConvenienceKitTest8LYAppLog_8fileName06methodG010lineNumberyx_S2SSitlF">LYAppLog(_:fileName:methodName:lineNumber:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/LYBundleConvenience.html">LYBundleConvenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LYCollectionViewFlowLayoutConvenience.html">LYCollectionViewFlowLayoutConvenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LYImageConvenience.html">LYImageConvenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LYMutableAttributedStringConvenience.html">LYMutableAttributedStringConvenience</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LYViewConvenience.html">LYViewConvenience</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/LYDateConvenienceFunc.html">LYDateConvenienceFunc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYDictionaryConvenienceFunc.html">LYDictionaryConvenienceFunc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYDoubleConvenienceFunc.html">LYDoubleConvenienceFunc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYMixtureAttribute.html">LYMixtureAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYScreenSize.html">LYScreenSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYStringConvenienceFunc.html">LYStringConvenienceFunc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYViewConvenienceFunc.html">LYViewConvenienceFunc</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYViewConvenienceFunc/LYUIBorderSideType.html">– LYUIBorderSideType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LYViewConvenience</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LYViewConvenience</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UIButton%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UIButton`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UIButton%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UIButton</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE5titleyxSSSg_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/title(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE5titleyxSSSg_So14UIControlStateVtF">title(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置标题</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">title</span><span class="p">(</span><span class="n">_</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span> <span class="o">=</span> <span class="o">.</span><span class="n">normal</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE10titleColoryxSo7UIColorC_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/titleColor(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE10titleColoryxSo7UIColorC_So14UIControlStateVtF">titleColor(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置标题颜色</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">titleColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span> <span class="o">=</span> <span class="o">.</span><span class="n">normal</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE4fontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/font(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE4fontyx12CoreGraphics7CGFloatVF">font(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="n">_</span> <span class="nv">font</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/boldFont(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF">boldFont(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置粗字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">boldFont</span><span class="p">(</span><span class="n">_</span> <span class="nv">font</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE5imageyxSo7UIImageCSg_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/image(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE5imageyxSo7UIImageCSg_So14UIControlStateVtF">image(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置图片</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">image</span><span class="p">(</span><span class="n">_</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span> <span class="o">=</span> <span class="o">.</span><span class="n">normal</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE15backgroundImageyxSo7UIImageCSg_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/backgroundImage(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE15backgroundImageyxSo7UIImageCSg_So14UIControlStateVtF">backgroundImage(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置背景图片</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">backgroundImage</span><span class="p">(</span><span class="n">_</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span> <span class="o">=</span> <span class="o">.</span><span class="n">normal</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE14addClickTarget_6action3forxypSg_10ObjectiveC8SelectorVSo15UIControlEventsVtF"></a>
+                    <a name="//apple_ref/swift/Method/addClickTarget(_:action:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE14addClickTarget_6action3forxypSg_10ObjectiveC8SelectorVSo15UIControlEventsVtF">addClickTarget(_:<wbr>action:<wbr>for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>添加点击事件</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addClickTarget</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="k">for</span> <span class="nv">controlEvents</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">Event</span> <span class="o">=</span> <span class="o">.</span><span class="n">touchUpInside</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE19changeImagePositionyxSo17UIViewContentModeV_12CoreGraphics7CGFloatVtF"></a>
+                    <a name="//apple_ref/swift/Method/changeImagePosition(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE19changeImagePositionyxSo17UIViewContentModeV_12CoreGraphics7CGFloatVtF">changeImagePosition(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>修改按钮图片的位置（要先设置按钮的frame：size要大于图片加文字的size）</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">changeImagePosition</span><span class="p">(</span><span class="n">_</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">ContentMode</span><span class="p">,</span> <span class="n">_</span> <span class="nv">spacing</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>.top:图片在上 .left:图片在左 .bottom:图片在下 .right:图片在右</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>spacing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>图片与文字的间隙</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE12addUnderlineyx12CoreGraphics7CGFloatV_AItF"></a>
+                    <a name="//apple_ref/swift/Method/addUnderline(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE12addUnderlineyx12CoreGraphics7CGFloatV_AItF">addUnderline(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>添加下划线，top:离文字底部的距离</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addUnderline</span><span class="p">(</span><span class="n">_</span> <span class="nv">top</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">_</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE12ly_countDown__0hI7BgColorSo24OS_dispatch_source_timer_pSgSi_SSSo7UIColorCtF"></a>
+                    <a name="//apple_ref/swift/Method/ly_countDown(_:_:countDownBgColor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo8UIButtonCRbzrlE12ly_countDown__0hI7BgColorSo24OS_dispatch_source_timer_pSgSi_SSSo7UIColorCtF">ly_countDown(_:<wbr>_:<wbr>countDownBgColor:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>验证码倒计时(注意销毁timer，列：设置全局codeTimer = codeBtn.ly_countDown（60），然后在deinit {codeTimer?.cancel();codeTimer = nil})</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ly_countDown</span><span class="p">(</span><span class="n">_</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"发送验证码"</span><span class="p">,</span> <span class="nv">countDownBgColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">gray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DispatchSourceTimer</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UICollectionView%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UICollectionView`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UICollectionView%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UICollectionView</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE8delegateyxypSgF"></a>
+                    <a name="//apple_ref/swift/Method/delegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE8delegateyxypSgF">delegate(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">delegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE10dataSourceyxypSgF"></a>
+                    <a name="//apple_ref/swift/Method/dataSource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE10dataSourceyxypSgF">dataSource(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>dataSource</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">dataSource</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/cell%20register%20and%20reuse"></a>
+                <a name="//apple_ref/swift/Section/cell register and reuse" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/cell%20register%20and%20reuse"></a>
+                  <h3 class="section-name"><span>cell register and reuse</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE15registerCellNibyxqd__mSo0fgI0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerCellNib(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE15registerCellNibyxqd__mSo0fgI0CRbd__lF">registerCellNib(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册xibCell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerCellNib</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE17registerCellClassyxqd__mSo0fgI0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE17registerCellClassyxqd__mSo0fgI0CRbd__lF">registerCellClass(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册Cell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerCellClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE22ly_dequeueReusableCellyqd__qd__m_10Foundation9IndexPathVtSo0fgK0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/ly_dequeueReusableCell(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE22ly_dequeueReusableCellyqd__qd__m_10Foundation9IndexPathVtSo0fgK0CRbd__lF">ly_dequeueReusableCell(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>重用的cell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">ly_dequeueReusableCell</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">_</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/HeaderFooter%20register%20and%20reuse"></a>
+                <a name="//apple_ref/swift/Section/HeaderFooter register and reuse" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/HeaderFooter%20register%20and%20reuse"></a>
+                  <h3 class="section-name"><span>HeaderFooter register and reuse</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE23registerHeaderFooterNibyxqd__m_SbtSo6UIViewCRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerHeaderFooterNib(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE23registerHeaderFooterNibyxqd__m_SbtSo6UIViewCRbd__lF">registerHeaderFooterNib(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册xibHeaderFooter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerHeaderFooterNib</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">_</span> <span class="nv">isHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE25registerHeaderFooterClassyxqd__m_SbtSo0f8ReusableG0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerHeaderFooterClass(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE25registerHeaderFooterClassyxqd__m_SbtSo0f8ReusableG0CRbd__lF">registerHeaderFooterClass(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册HeaderFooter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerHeaderFooterClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">_</span> <span class="nv">isHeader</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UICollectionReusableView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE30ly_dequeueReusableHeaderFooteryqd__qd__m_SS10Foundation9IndexPathVtSo0fjG0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/ly_dequeueReusableHeaderFooter(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo16UICollectionViewCRbzrlE30ly_dequeueReusableHeaderFooteryqd__qd__m_SS10Foundation9IndexPathVtSo0fjG0CRbd__lF">ly_dequeueReusableHeaderFooter(_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>重用HeaderFooter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">ly_dequeueReusableHeaderFooter</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">_</span> <span class="nv">kind</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UICollectionReusableView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UIImageView%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UIImageView`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UIImageView%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UIImageView</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE5imageyxSo0F0CSgF"></a>
+                    <a name="//apple_ref/swift/Method/image(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE5imageyxSo0F0CSgF">image(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置图片</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">image</span><span class="p">(</span><span class="n">_</span> <span class="nv">img</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE6images_8duration11repeatCountxSaySo0F0CG_SdSitF"></a>
+                    <a name="//apple_ref/swift/Method/images(_:duration:repeatCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE6images_8duration11repeatCountxSaySo0F0CG_SdSitF">images(_:<wbr>duration:<wbr>repeatCount:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置图片数组(gif)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">images</span><span class="p">(</span><span class="n">_</span> <span class="nv">imgs</span><span class="p">:[</span><span class="kt">UIImage</span><span class="p">],</span>
+            <span class="nv">duration</span><span class="p">:</span><span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+            <span class="nv">repeatCount</span><span class="p">:</span><span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE13ly_setKfImageyySSSg_SStF"></a>
+                    <a name="//apple_ref/swift/Method/ly_setKfImage(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE13ly_setKfImageyySSSg_SStF">ly_setKfImage(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置网络图片</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ly_setKfImage</span><span class="p">(</span><span class="n">_</span> <span class="nv">imageUrl</span><span class="p">:</span><span class="kt">String</span><span class="p">?,</span>
+                   <span class="n">_</span> <span class="nv">placeholderImageName</span><span class="p">:</span><span class="kt">String</span> <span class="o">=</span> <span class="s">"ly_placeholder"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE13ly_setKfImage_11placeholderySSSg_So0F0CSgtF"></a>
+                    <a name="//apple_ref/swift/Method/ly_setKfImage(_:placeholder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UIImageViewCRbzrlE13ly_setKfImage_11placeholderySSSg_So0F0CSgtF">ly_setKfImage(_:<wbr>placeholder:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置网络图片(无默认图片,需自己设置UIImage)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ly_setKfImage</span><span class="p">(</span><span class="n">_</span> <span class="nv">imageUrl</span><span class="p">:</span><span class="kt">String</span><span class="p">?,</span>
+                    <span class="n">placeholder</span> <span class="nv">image</span><span class="p">:</span><span class="kt">UIImage</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UILabel%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UILabel`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UILabel%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UILabel</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE4textyxSSSgF"></a>
+                    <a name="//apple_ref/swift/Method/text(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE4textyxSSSgF">text(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置文字</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">text</span><span class="p">(</span><span class="n">_</span> <span class="nv">textString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE14attributedTextyxSo18NSAttributedStringCSgF"></a>
+                    <a name="//apple_ref/swift/Method/attributedText(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE14attributedTextyxSo18NSAttributedStringCSgF">attributedText(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置属性文本</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">attributedText</span><span class="p">(</span><span class="n">_</span> <span class="nv">attributedString</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE4fontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/font(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE4fontyx12CoreGraphics7CGFloatVF">font(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="n">_</span> <span class="nv">fontSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/boldFont(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF">boldFont(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置粗字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">boldFont</span><span class="p">(</span><span class="n">_</span> <span class="nv">fontSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE9textColoryxSo7UIColorCF"></a>
+                    <a name="//apple_ref/swift/Method/textColor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE9textColoryxSo7UIColorCF">textColor(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置文字颜色</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE13numberOfLinesyxSiF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfLines(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE13numberOfLinesyxSiF">numberOfLines(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置行数</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">numberOfLines</span><span class="p">(</span><span class="n">_</span> <span class="nv">lines</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE13textAlignmentyxSo06NSTextH0VF"></a>
+                    <a name="//apple_ref/swift/Method/textAlignment(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo7UILabelCRbzrlE13textAlignmentyxSo06NSTextH0VF">textAlignment(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置文本对齐方式</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textAlignment</span><span class="p">(</span><span class="n">_</span> <span class="nv">alignment</span><span class="p">:</span> <span class="kt">NSTextAlignment</span> <span class="o">=</span> <span class="o">.</span><span class="n">left</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UIScrollView%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UIScrollView`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UIScrollView%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UIScrollView</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE8delegateyxypSgF"></a>
+                    <a name="//apple_ref/swift/Method/delegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE8delegateyxypSgF">delegate(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">delegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE7bouncesyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/bounces(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE7bouncesyxSbF">bounces(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>滑动到顶部或底部是否有弹性效果</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">bounces</span><span class="p">(</span><span class="n">_</span> <span class="nv">isBounce</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE13scrollEnabledyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/scrollEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE13scrollEnabledyxSbF">scrollEnabled(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否可以滑动</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">isScroll</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE13pagingEnabledyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/pagingEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE13pagingEnabledyxSbF">pagingEnabled(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否分页滑动</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">pagingEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">isPage</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE30showsHorizontalScrollIndicatoryxSbF"></a>
+                    <a name="//apple_ref/swift/Method/showsHorizontalScrollIndicator(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE30showsHorizontalScrollIndicatoryxSbF">showsHorizontalScrollIndicator(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否展示水平滚动条</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">showsHorizontalScrollIndicator</span><span class="p">(</span><span class="n">_</span> <span class="nv">isShow</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE28showsVerticalScrollIndicatoryxSbF"></a>
+                    <a name="//apple_ref/swift/Method/showsVerticalScrollIndicator(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE28showsVerticalScrollIndicatoryxSbF">showsVerticalScrollIndicator(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否展示垂直滚动条</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">showsVerticalScrollIndicator</span><span class="p">(</span><span class="n">_</span> <span class="nv">isShow</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE13ly_screenShotyyySo7UIImageCSgcF"></a>
+                    <a name="//apple_ref/swift/Method/ly_screenShot(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo12UIScrollViewCRbzrlE13ly_screenShotyyySo7UIImageCSgcF">ly_screenShot(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>截全图</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ly_screenShot</span><span class="p">(</span><span class="n">_</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">screenShotImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B1%9E%E6%80%A7"></a>
+                <a name="//apple_ref/swift/Section/常用的属性" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B1%9E%E6%80%A7"></a>
+                  <h3 class="section-name"><span>常用的属性</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE9rowHeightyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/rowHeight(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE9rowHeightyx12CoreGraphics7CGFloatVF">rowHeight(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置cell的高度</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rowHeight</span><span class="p">(</span><span class="n">_</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="kt">UITableView</span><span class="o">.</span><span class="n">automaticDimension</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE18estimatedRowHeightyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/estimatedRowHeight(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE18estimatedRowHeightyx12CoreGraphics7CGFloatVF">estimatedRowHeight(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>估算cell的高度</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">estimatedRowHeight</span><span class="p">(</span><span class="n">_</span> <span class="nv">rowHeight</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">44.0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE14separatorStyleyxSo0fg13CellSeparatorI0VF"></a>
+                    <a name="//apple_ref/swift/Method/separatorStyle(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE14separatorStyleyxSo0fg13CellSeparatorI0VF">separatorStyle(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>分割线样式</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">separatorStyle</span><span class="p">(</span><span class="n">_</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="o">.</span><span class="kt">SeparatorStyle</span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE011tableHeaderG0yxSo6UIViewCF"></a>
+                    <a name="//apple_ref/swift/Method/tableHeaderView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE011tableHeaderG0yxSo6UIViewCF">tableHeaderView(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>头视图</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">tableHeaderView</span><span class="p">(</span><span class="n">_</span> <span class="nv">headView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE011tableFooterG0yxSo6UIViewCF"></a>
+                    <a name="//apple_ref/swift/Method/tableFooterView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE011tableFooterG0yxSo6UIViewCF">tableFooterView(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>尾视图</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">tableFooterView</span><span class="p">(</span><span class="n">_</span> <span class="nv">footView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE8delegateyxypSgF"></a>
+                    <a name="//apple_ref/swift/Method/delegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE8delegateyxypSgF">delegate(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">delegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE10dataSourceyxypSgF"></a>
+                    <a name="//apple_ref/swift/Method/dataSource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE10dataSourceyxypSgF">dataSource(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>dataSource</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">dataSource</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/cell%20register%20and%20reuse2"></a>
+                <a name="//apple_ref/swift/Section/cell register and reuse" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/cell%20register%20and%20reuse2"></a>
+                  <h3 class="section-name"><span>cell register and reuse</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE15registerCellNibyxqd__mSo0fgI0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerCellNib(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE15registerCellNibyxqd__mSo0fgI0CRbd__lF">registerCellNib(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册xibCell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerCellNib</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE17registerCellClassyxqd__mSo0fgI0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE17registerCellClassyxqd__mSo0fgI0CRbd__lF">registerCellClass(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册Cell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerCellClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE22ly_dequeueReusableCellyqd__qd__m_10Foundation9IndexPathVtSo0fgK0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/ly_dequeueReusableCell(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE22ly_dequeueReusableCellyqd__qd__m_10Foundation9IndexPathVtSo0fgK0CRbd__lF">ly_dequeueReusableCell(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>重用的cell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">ly_dequeueReusableCell</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">_</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/HeaderFooter%20register%20and%20reuse2"></a>
+                <a name="//apple_ref/swift/Section/HeaderFooter register and reuse" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/HeaderFooter%20register%20and%20reuse2"></a>
+                  <h3 class="section-name"><span>HeaderFooter register and reuse</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE23registerHeaderFooterNibyxqd__mSo0fgijG0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerHeaderFooterNib(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE23registerHeaderFooterNibyxqd__mSo0fgijG0CRbd__lF">registerHeaderFooterNib(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册xibHeaderFooter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerHeaderFooterNib</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UITableViewHeaderFooterView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE25registerHeaderFooterClassyxqd__mSo0fgijG0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/registerHeaderFooterClass(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE25registerHeaderFooterClassyxqd__mSo0fgijG0CRbd__lF">registerHeaderFooterClass(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>注册HeaderFooter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">registerHeaderFooterClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UITableViewHeaderFooterView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE30ly_dequeueReusableHeaderFooteryqd__Sgqd__mSo6UIViewCRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/ly_dequeueReusableHeaderFooter(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITableViewCRbzrlE30ly_dequeueReusableHeaderFooteryqd__Sgqd__mSo6UIViewCRbd__lF">ly_dequeueReusableHeaderFooter(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>重用HeaderFooter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="n">ly_dequeueReusableHeaderFooter</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">aClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UITextField%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UITextField`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UITextField%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UITextField</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE8delegateyxypSgF"></a>
+                    <a name="//apple_ref/swift/Method/delegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE8delegateyxypSgF">delegate(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">delegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE11placeholderyxSSSgF"></a>
+                    <a name="//apple_ref/swift/Method/placeholder(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE11placeholderyxSSSgF">placeholder(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置提示文字</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">placeholder</span><span class="p">(</span><span class="n">_</span> <span class="nv">placeholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE4textyxSSSgF"></a>
+                    <a name="//apple_ref/swift/Method/text(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE4textyxSSSgF">text(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置文字</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">text</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE14attributedTextyxSo18NSAttributedStringCSgF"></a>
+                    <a name="//apple_ref/swift/Method/attributedText(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE14attributedTextyxSo18NSAttributedStringCSgF">attributedText(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置属性文本</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">attributedText</span><span class="p">(</span><span class="n">_</span> <span class="nv">attributedString</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE4fontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/font(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE4fontyx12CoreGraphics7CGFloatVF">font(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="n">_</span> <span class="nv">font</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/boldFont(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF">boldFont(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置粗字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">boldFont</span><span class="p">(</span><span class="n">_</span> <span class="nv">font</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE9textColoryxSo7UIColorCF"></a>
+                    <a name="//apple_ref/swift/Method/textColor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE9textColoryxSo7UIColorCF">textColor(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置文字颜色</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE15secureTextEntryyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/secureTextEntry(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE15secureTextEntryyxSbF">secureTextEntry(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置密文输入</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">secureTextEntry</span><span class="p">(</span><span class="n">_</span> <span class="nv">isSecure</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE12keyboardTypeyxSo010UIKeyboardI0VF"></a>
+                    <a name="//apple_ref/swift/Method/keyboardType(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE12keyboardTypeyxSo010UIKeyboardI0VF">keyboardType(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置键盘样式</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">keyboardType</span><span class="p">(</span><span class="n">_</span> <span class="nv">keyboardType</span><span class="p">:</span> <span class="kt">UIKeyboardType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE18addLeftRetractView_4viewx12CoreGraphics7CGFloatV_So6UIViewCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/addLeftRetractView(_:view:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE18addLeftRetractView_4viewx12CoreGraphics7CGFloatV_So6UIViewCSgtF">addLeftRetractView(_:<wbr>view:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>添加左边视图； v=nil时，w为文字到左边的距离</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addLeftRetractView</span><span class="p">(</span><span class="n">_</span> <span class="nv">w</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE19addRightRetractView_4viewx12CoreGraphics7CGFloatV_So6UIViewCSgtF"></a>
+                    <a name="//apple_ref/swift/Method/addRightRetractView(_:view:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE19addRightRetractView_4viewx12CoreGraphics7CGFloatV_So6UIViewCSgtF">addRightRetractView(_:<wbr>view:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>添加右边视图；v=nil时，w为文字到右边的距离</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addRightRetractView</span><span class="p">(</span><span class="n">_</span> <span class="nv">w</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE9addTarget_6action3forxypSg_10ObjectiveC8SelectorVSo15UIControlEventsVtF"></a>
+                    <a name="//apple_ref/swift/Method/addTarget(_:action:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo11UITextFieldCRbzrlE9addTarget_6action3forxypSg_10ObjectiveC8SelectorVSo15UIControlEventsVtF">addTarget(_:<wbr>action:<wbr>for:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>添加事件</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTarget</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">,</span> <span class="k">for</span> <span class="nv">controlEvents</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">Event</span> <span class="o">=</span> <span class="o">.</span><span class="n">editingChanged</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UITextView%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UITextView`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UITextView%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UITextView</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE11placeholderyxSSSg_So7UIColorCtF"></a>
+                    <a name="//apple_ref/swift/Method/placeholder(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE11placeholderyxSSSg_So7UIColorCtF">placeholder(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置提示文字(注意)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">placeholder</span><span class="p">(</span><span class="n">_</span> <span class="nv">placeholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">placeholderColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="o">.</span><span class="n">placeholder</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE4textyxSSSgF"></a>
+                    <a name="//apple_ref/swift/Method/text(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE4textyxSSSgF">text(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置文字</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">text</span><span class="p">(</span><span class="n">_</span> <span class="nv">textString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE8delegateyxypSgF"></a>
+                    <a name="//apple_ref/swift/Method/delegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE8delegateyxypSgF">delegate(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">delegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE14attributedTextyxSo18NSAttributedStringCSgF"></a>
+                    <a name="//apple_ref/swift/Method/attributedText(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE14attributedTextyxSo18NSAttributedStringCSgF">attributedText(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置属性文本</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">attributedText</span><span class="p">(</span><span class="n">_</span> <span class="nv">attributedString</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE4fontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/font(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE4fontyx12CoreGraphics7CGFloatVF">font(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="n">_</span> <span class="nv">fontSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/boldFont(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE8boldFontyx12CoreGraphics7CGFloatVF">boldFont(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置粗字体</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">boldFont</span><span class="p">(</span><span class="n">_</span> <span class="nv">fontSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE9textColoryxSo7UIColorCF"></a>
+                    <a name="//apple_ref/swift/Method/textColor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE9textColoryxSo7UIColorCF">textColor(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置文字颜色</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE12keyboardTypeyxSo010UIKeyboardI0VF"></a>
+                    <a name="//apple_ref/swift/Method/keyboardType(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE12keyboardTypeyxSo010UIKeyboardI0VF">keyboardType(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置键盘样式</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">keyboardType</span><span class="p">(</span><span class="n">_</span> <span class="nv">keyboardType</span><span class="p">:</span> <span class="kt">UIKeyboardType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE8editableyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/editable(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE8editableyxSbF">editable(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否可以编辑</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">editable</span><span class="p">(</span><span class="n">_</span> <span class="nv">isEdit</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE13scrollEnabledyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/scrollEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo10UITextViewCRbzrlE13scrollEnabledyxSbF">scrollEnabled(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">isScorll</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Self%60%3A%20%60UIView%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Self`: `UIView`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Self%60%3A%20%60UIView%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Self</code>: <code>UIView</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE14addToSuperViewyxAEF"></a>
+                    <a name="//apple_ref/swift/Method/addToSuperView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE14addToSuperViewyxAEF">addToSuperView(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>添加到父视图</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addToSuperView</span><span class="p">(</span><span class="n">_</span> <span class="nv">superV</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE6layout_9snapMakerxAE_y04SnapB0010ConstraintI0CXEtF"></a>
+                    <a name="//apple_ref/swift/Method/layout(_:snapMaker:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE6layout_9snapMakerxAE_y04SnapB0010ConstraintI0CXEtF">layout(_:<wbr>snapMaker:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加约束</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">layout</span><span class="p">(</span><span class="n">_</span> <span class="nv">superV</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">snapMaker</span><span class="p">:</span> <span class="p">(</span><span class="kt">ConstraintMaker</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE3tagyxSiF"></a>
+                    <a name="//apple_ref/swift/Method/tag(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE3tagyxSiF">tag(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置背景颜色</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">tag</span><span class="p">(</span><span class="n">_</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE15backgroundColoryxSo7UIColorCF"></a>
+                    <a name="//apple_ref/swift/Method/backgroundColor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE15backgroundColoryxSo7UIColorCF">backgroundColor(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置背景颜色</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">backgroundColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11layerBorderyx12CoreGraphics7CGFloatV_So7UIColorCtF"></a>
+                    <a name="//apple_ref/swift/Method/layerBorder(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11layerBorderyx12CoreGraphics7CGFloatV_So7UIColorCtF">layerBorder(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置边框</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">layerBorder</span><span class="p">(</span><span class="n">_</span> <span class="nv">bWidth</span><span class="p">:</span><span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                 <span class="n">_</span> <span class="nv">bColor</span><span class="p">:</span><span class="kt">UIColor</span> <span class="o">=</span> <span class="err">#</span><span class="nf">colorLiteral</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mf">0.8509803922</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mf">0.8509803922</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mf">0.8509803922</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mi">1</span><span class="p">))</span> <span class="o">-&gt;</span><span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11layerRadiusyx12CoreGraphics7CGFloatV_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/layerRadius(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11layerRadiusyx12CoreGraphics7CGFloatV_SbtF">layerRadius(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置圆角</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">layerRadius</span><span class="p">(</span><span class="n">_</span> <span class="nv">radius</span><span class="p">:</span><span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+                 <span class="n">_</span> <span class="nv">isMasks</span><span class="p">:</span><span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11contentModeyxSo0f7ContentH0VF"></a>
+                    <a name="//apple_ref/swift/Method/contentMode(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11contentModeyxSo0f7ContentH0VF">contentMode(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>设置填充模式</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">contentMode</span><span class="p">(</span><span class="n">_</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">ContentMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11userEnabledyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/userEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE11userEnabledyxSbF">userEnabled(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">userEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">isEnable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE6hiddenyxSbF"></a>
+                    <a name="//apple_ref/swift/Method/hidden(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE6hiddenyxSbF">hidden(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否隐藏</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">hidden</span><span class="p">(</span><span class="n">_</span> <span class="nv">isHid</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE9addTarget6target6actionxypSg_10ObjectiveC8SelectorVSgtF"></a>
+                    <a name="//apple_ref/swift/Method/addTarget(target:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20LYConvenienceKitTest17LYViewConveniencePAASo6UIViewCRbzrlE9addTarget6target6actionxypSg_10ObjectiveC8SelectorVSgtF">addTarget(target:<wbr>action:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>添加点击事件</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTarget</span><span class="p">(</span><span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://github.com/liuyik/LYConvenienceKit.git" target="_blank" rel="external noopener">liuyik</a>. All rights reserved. (Last updated: 2021-11-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

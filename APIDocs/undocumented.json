@@ -1,0 +1,432 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 11,
+      "symbol": "LYBundleConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 11,
+      "symbol": "LYCollectionViewFlowLayoutConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYImageConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 26,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 27,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 27,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 29,
+      "symbol": "UIView.ly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 32,
+      "symbol": "LYCollectionViewFlowLayoutConvenience",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 36,
+      "symbol": "LYMutableAttributedStringConvenience",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 40,
+      "symbol": "LYImageConvenience",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 44,
+      "symbol": "LYBundleConvenience",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 45,
+      "symbol": "LYMutableAttributedStringConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 49,
+      "symbol": "String.ly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 53,
+      "symbol": "Double.ly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 57,
+      "symbol": "Date.ly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 61,
+      "symbol": "Dictionary.ly",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYConvenienceProtocol.swift",
+      "line": 86,
+      "symbol": "LYViewConvenience",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYDateConvenienceFunc.swift",
+      "line": 27,
+      "symbol": "LYDateConvenienceFunc",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYDateConvenienceFunc.swift",
+      "line": 31,
+      "symbol": "LYDateConvenienceFunc.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYDictionaryConvenienceFunc.swift",
+      "line": 11,
+      "symbol": "LYDictionaryConvenienceFunc",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYDictionaryConvenienceFunc.swift",
+      "line": 15,
+      "symbol": "LYDictionaryConvenienceFunc.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYDoubleConvenienceFunc.swift",
+      "line": 26,
+      "symbol": "LYDoubleConvenienceFunc",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYDoubleConvenienceFunc.swift",
+      "line": 30,
+      "symbol": "LYDoubleConvenienceFunc.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYMutableAttributedStringConvenience.swift",
+      "line": 28,
+      "symbol": "LYMixtureAttribute.init(string:color:font:attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYMutableAttributedStringConvenience.swift",
+      "line": 38,
+      "symbol": "LYMixtureAttribute.string",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYMutableAttributedStringConvenience.swift",
+      "line": 39,
+      "symbol": "LYMixtureAttribute.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYMutableAttributedStringConvenience.swift",
+      "line": 40,
+      "symbol": "LYMixtureAttribute.font",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYMutableAttributedStringConvenience.swift",
+      "line": 41,
+      "symbol": "LYMixtureAttribute.attributes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYScreenConvenience.swift",
+      "line": 26,
+      "symbol": "LYScreenSize",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYStringConvenienceFunc.swift",
+      "line": 27,
+      "symbol": "LYStringConvenienceFunc",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYStringConvenienceFunc.swift",
+      "line": 31,
+      "symbol": "LYStringConvenienceFunc.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYStringConvenienceFunc.swift",
+      "line": 125,
+      "symbol": "LYStringConvenienceFunc.attributedString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYTextViewConvenience.swift",
+      "line": 105,
+      "symbol": "LYViewConvenience.scrollEnabled(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIColorExt.swift",
+      "line": 29,
+      "symbol": "UIColor.LYColorStyle",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIColorExt.swift",
+      "line": 74,
+      "symbol": "UIColor.LYGradientColorDirection",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIColorExt.swift",
+      "line": 75,
+      "symbol": "UIColor.LYGradientColorDirection.topToBottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIColorExt.swift",
+      "line": 76,
+      "symbol": "UIColor.LYGradientColorDirection.letfToRight",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIColorExt.swift",
+      "line": 77,
+      "symbol": "UIColor.LYGradientColorDirection.leftTopToRightBottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIColorExt.swift",
+      "line": 78,
+      "symbol": "UIColor.LYGradientColorDirection.rightTopToleftBottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 29,
+      "symbol": "UIView.ly_left",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 40,
+      "symbol": "UIView.ly_top",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 52,
+      "symbol": "UIView.ly_width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 64,
+      "symbol": "UIView.ly_height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 76,
+      "symbol": "UIView.ly_right",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 82,
+      "symbol": "UIView.ly_bottom",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 88,
+      "symbol": "UIView.ly_centerX",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYUIViewExt.swift",
+      "line": 100,
+      "symbol": "UIView.ly_centerY",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenience.swift",
+      "line": 91,
+      "symbol": "LYViewConvenience.userEnabled(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenienceFunc.swift",
+      "line": 26,
+      "symbol": "LYViewConvenienceFunc",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenienceFunc.swift",
+      "line": 30,
+      "symbol": "LYViewConvenienceFunc.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenienceFunc.swift",
+      "line": 110,
+      "symbol": "LYViewConvenienceFunc.LYUIBorderSideType.all",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenienceFunc.swift",
+      "line": 111,
+      "symbol": "LYViewConvenienceFunc.LYUIBorderSideType.left",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenienceFunc.swift",
+      "line": 112,
+      "symbol": "LYViewConvenienceFunc.LYUIBorderSideType.right",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenienceFunc.swift",
+      "line": 113,
+      "symbol": "LYViewConvenienceFunc.LYUIBorderSideType.top",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/liuyi/LYConvenienceKit/LYConvenienceKit/LYViewConvenienceFunc.swift",
+      "line": 114,
+      "symbol": "LYViewConvenienceFunc.LYUIBorderSideType.bottom",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/liuyi/Desktop/test/LYConvenienceKitTest"
+}
