@@ -5,7 +5,7 @@
 //  Created by liuyi on 2021/11/11.
 //
 
-import Foundation
+import UIKit
 
 extension LYBundleConvenience where Self: Bundle {
     
