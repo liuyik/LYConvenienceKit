@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LYConvenienceKit"
-  spec.version      = "1.1.3"
+  spec.version      = "1.1.4"
   spec.summary      = "链式编程创建UI,和一些常用的func"
   spec.homepage     = "https://github.com/liuyik/LYConvenienceKit.git"
 
