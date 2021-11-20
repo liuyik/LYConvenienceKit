@@ -13,6 +13,7 @@ pod 'LYConvenienceKit'
 LYConvenienceKit依赖了[SnapKit](https://github.com/SnapKit/SnapKit.git)和[Alamofire](https://github.com/Alamofire/Alamofire.git)两个框架，pod时会导入这两个框架
 
 ### 简单使用：（注：可下载[demo](https://github.com/liuyik/LYConvenienceKit.git)具体查看） 
+也可以查看[文档](https://liuyik.github.io/LYConvenienceKit)
 
 ```
 //这样导入一次后整个项目可用
